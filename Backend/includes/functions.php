@@ -1,13 +1,15 @@
 <?php
-//functions.php
+require_once '../config/db.php';
 
 // Sign-in User
-function signInUser($conn, $email, $password) {
+function signInUser($email, $password) {
+    $conn = Database::getInstance()->getConnection();
     $query = "SELECT * FROM users WHERE email = :email";
     $stmt = $conn->prepare($query);
     $stmt->bindParam(':email', $email);
     $stmt->execute();
     $user = $stmt->fetch();
+
     if ($user && password_verify($password, $user['password'])) {
         return $user;
     } else {
@@ -15,15 +17,13 @@ function signInUser($conn, $email, $password) {
     }
 }
 
-// register User
-function registerUser($conn, $email, $password) {
+// Register User
+function registerUser($email, $password) {
+    $conn = Database::getInstance()->getConnection();
     $query = "INSERT INTO users (email, password) VALUES (:email, :password)";
     $stmt = $conn->prepare($query);
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':password', password_hash($password, PASSWORD_DEFAULT));
     return $stmt->execute();
 }
-
-
-
 ?>
