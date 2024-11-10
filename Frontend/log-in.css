@@ -1,0 +1,151 @@
+/* screen - log-in */
+
+.log-in {
+  align-items: flex-start;
+  background-color: var(--shady-lady);
+  display: flex;
+  height: 1116px;
+  overflow: hidden;
+  width: 1465px;
+}
+
+.log-in .overlap-group {
+  height: 1136px;
+  margin-left: -36px;
+  margin-top: -20px;
+  position: relative;
+  width: 1516px;
+}
+
+.log-in .rectangle-188 {
+  height: 1021px;
+  left: 36px;
+  position: absolute;
+  top: 115px;
+  width: 1465px;
+}
+
+.log-in .form-log-in {
+  align-items: center;
+  background-color: var(--prim);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  left: 419px;
+  min-height: 820px;
+  padding: 11px 0;
+  position: absolute;
+  top: 204px;
+  width: 669px;
+}
+
+.log-in .title {
+  letter-spacing: 0;
+  line-height: 48px;
+  min-height: 56px;
+  text-align: center;
+  white-space: nowrap;
+  width: 593px;
+}
+
+.log-in .line-26 {
+  align-self: flex-start;
+  height: 1px;
+  margin-top: 8px;
+  object-fit: cover;
+  width: 701px;
+}
+
+.log-in .log-instudentcard {
+  margin-top: 60px;
+}
+
+.log-in .flex-row {
+  align-items: center;
+  display: flex;
+  gap: 208px;
+  height: 15px;
+  margin-right: 5.0px;
+  margin-top: 9px;
+  min-width: 323px;
+}
+
+.log-in .sign-in-as-student {
+  min-width: 103px;
+}
+
+.log-in .vector {
+  height: 7px;
+  margin-top: 2.0px;
+  width: 12px;
+}
+
+.log-in .frame-32 {
+  background-color: var(--white);
+  height: 29px;
+  width: 360px;
+}
+
+.log-in .log-intutorcard {
+  margin-top: 24px;
+}
+
+.log-in .flex-row-1 {
+  align-items: center;
+  display: flex;
+  gap: 223px;
+  height: 15px;
+  margin-right: 5.0px;
+  margin-top: 9px;
+  min-width: 323px;
+}
+
+.log-in .sign-in-as-tutor {
+  min-width: 88px;
+}
+
+.log-in .dashbored {
+  background-color: var(--lavender-gray);
+  border: 0px none;
+  height: 115px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1516px;
+}
+
+.log-in .logo {
+  height: 160px;
+  left: 690px;
+  position: absolute;
+  top: 38px;
+  width: 159px;
+}
+
+.log-in .arrow_back {
+  cursor: pointer;
+  height: 33px;
+  left: 56px;
+  position: absolute;
+  top: 53px;
+  width: 36px;
+}
+
+.log-in .log {
+  align-items: center;
+  background-color: var(--gravel-3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 55px;
+  margin-left: 33.0px;
+  overflow: hidden;
+  width: 360px;
+}
+
+.log-in .sign-in-as {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 15px;
+}
