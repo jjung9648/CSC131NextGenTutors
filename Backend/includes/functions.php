@@ -28,7 +28,9 @@ function registerUser($email, $password) {
 }
 
 // Get Tutor Data
-function getStudentData($tutorId) {
+
+
+function getStudentData($studentId) {
     $conn = Database::getInstance()->getConnection();
     
     // Fetch student's name
@@ -43,7 +45,7 @@ function getStudentData($tutorId) {
               FROM subjects s
               JOIN performance p ON s.id = p.subject_id
               JOIN attendance a ON s.id = a.subject_id AND p.student_id = a.student_id
-              JOIN tutors t ON p.subject_id = t.id
+              JOIN tutors t ON p.tutor_id = t.id
               WHERE p.student_id = :student_id
               ORDER BY s.name ASC";
     $stmt = $conn->prepare($query);
@@ -64,6 +66,7 @@ function getStudentData($tutorId) {
         'overall_grade' => $overallGrade
     ];
 }
+
 
 // Get Tutor Hours Data
 function getTutorHoursData($tutorId) {
@@ -87,5 +90,21 @@ function getTutorHoursData($tutorId) {
         'tutor' => $tutor,
         'hours' => $hours
     ];
+}
+
+function getUsers() {
+    $conn = Database::getInstance()->getConnection();
+    $query = "SELECT * FROM users";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function getTutors() {
+    $conn = Database::getInstance()->getConnection();
+    $query = "SELECT * FROM tutors";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 ?>

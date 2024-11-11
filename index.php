@@ -1,24 +1,20 @@
 <?php
-require 'vendor/autoload.php';
+// index.php
+require_once './Backend/config/db.php';
+require_once './Backend/includes/functions.php';
 
-use Dotenv\Dotenv;
+// Basic routing
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
-
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-
-$host = $_ENV['DB_HOST'];
-$port = $_ENV['DB_PORT'];
-$dbname = $_ENV['DB_NAME'];
-$username = $_ENV['DB_USERNAME'];
-$password = $_ENV['DB_PASSWORD'];
-
-try {
-    $pdo = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected to the MySQL database!";
-} catch (PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
+switch ($page) {
+    case 'home':
+        include './Backend/includes/home.php';
+        break;
+    case 'about':
+        include './Backend/includes/about.php';
+        break;
+    default:
+        include './Backend/includes/404.php';
+        break;
 }
 ?>

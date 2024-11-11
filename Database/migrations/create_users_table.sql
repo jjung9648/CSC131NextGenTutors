@@ -43,11 +43,13 @@ CREATE TABLE attendance (
 CREATE TABLE performance (
     id INT AUTO_INCREMENT PRIMARY KEY,
     student_id INT NOT NULL,
+    tutor_id INT NOT NULL,
     subject_id INT NOT NULL,
     grade INT NOT NULL,
     date DATE NOT NULL,
     FOREIGN KEY (student_id) REFERENCES students(id),
-    FOREIGN KEY (subject_id) REFERENCES subjects(id)
+    FOREIGN KEY (subject_id) REFERENCES subjects(id),
+    FOREIGN KEY (tutor_id) REFERENCES tutors(id)
 );
 CREATE TABLE tutor_hours (
     id INT AUTO_INCREMENT PRIMARY KEY,
