@@ -5,15 +5,15 @@ return [
         'Google' => [
             'enabled' => true,
             'keys' => [
-                'id' => 'REDACTED',
-                'secret' => 'REDACTED'
+               'id' => $_ENV['GOOGLE_CLIENT_ID'],
+                'secret' => $_ENV['GOOGLE_CLIENT_SECRET']
             ],
         ],
         'Facebook' => [
             'enabled' => true,
             'keys' => [
-                'id' => 'YOUR_FACEBOOK_APP_ID',
-                'secret' => 'REDACTED'
+                'id' => $_ENV['FACEBOOK_APP_ID'],
+                'secret' => $_ENV['FACEBOOK_APP_SECRET']
             ],
         ],
     ],

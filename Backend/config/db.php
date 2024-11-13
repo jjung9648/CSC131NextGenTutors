@@ -1,15 +1,26 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 class Database {
     private static $instance = null;
     private $conn;
 
-    private $host = 'my-new-db.cngy2e0i6hdm.us-east-2.rds.amazonaws.com';
-    private $db = 'my-new-db';
-    private $user = 'jjung2';
-    private $pass = 'root-password';
-    private $port = '3306';
+    private $host;
+    private $db;
+    private $user;
+    private $pass;
+    private $port;
 
     private function __construct() {
+        $this->host = $_ENV['DB_HOST'];
+        $this->db = $_ENV['DB_NAME'];
+        $this->user = $_ENV['DB_USER'];
+        $this->pass = $_ENV['DB_PASS'];
+        $this->port = $_ENV['DB_PORT'];
+
         try {
             $this->conn = new PDO("mysql:host={$this->host};dbname={$this->db};port={$this->port}", $this->user, $this->pass);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -29,4 +40,3 @@ class Database {
         return $this->conn;
     }
 }
-?>
