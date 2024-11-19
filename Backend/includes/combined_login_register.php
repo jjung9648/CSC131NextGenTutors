@@ -21,6 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($action == 'login') {
         $result = $user->signIn($email, $password);
         if ($result) {
+            $_SESSION['user_id'] = $result['id']; 
+            $_SESSION['user_type'] = $userType; 
             echo "Welcome, " . $result['name'];
         } else {
             echo "Invalid email or password.";

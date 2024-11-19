@@ -3,7 +3,7 @@
 require_once './Backend/config/db.php';
 
 // Basic routing
-$page = isset($_GET['page']) ? $_GET['page'] : 'landing-page';
+$page = isset($_GET['page']) ? $_GET['page'] : 'notifications';
 
 switch ($page) {
     case 'landing-page':
@@ -38,6 +38,9 @@ switch ($page) {
         break;
     case 'login-register':
         include './Frontend/combined_login_register.php';
+        break;
+    case 'notifications':
+        include './Backend/includes/notifications_and_settings.php';
         break;
     case 'student-data':
         include './Frontend/student_data.php';

@@ -60,3 +60,15 @@ CREATE TABLE tutor_hours (
     hours INT NOT NULL,
     FOREIGN KEY (tutor_id) REFERENCES tutors(id)
 );
+CREATE TABLE notifications (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+CREATE TABLE user_preferences (
+    user_id INT PRIMARY KEY,
+    receive_email BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
