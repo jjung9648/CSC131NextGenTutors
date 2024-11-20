@@ -22,7 +22,8 @@ class Student implements User {
         $query = "INSERT INTO students (email, password) VALUES (:email, :password)";
         $stmt = $conn->prepare($query);
         $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':password', password_hash($password, PASSWORD_DEFAULT));
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        $stmt->bindParam(':password', $hashedPassword);
         return $stmt->execute();
     }
 }
