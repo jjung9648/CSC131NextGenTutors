@@ -1,13 +1,13 @@
 <?php
 // index.php
-require_once './Backend/config/db.php';
+require_once __DIR__ . '/Backend/config/db.php';
 
 // Basic routing
-$page = isset($_GET['page']) ? $_GET['page'] : 'notifications';
+$page = isset($_GET['page']) ? $_GET['page'] : 'landing-page';
 
 switch ($page) {
     case 'landing-page':
-        include './Backend/includes/combined_login_register.php';
+        include './Frontend/landing-page.html';
         break;
     case 'login':
         include './Frontend/log-in.html';
