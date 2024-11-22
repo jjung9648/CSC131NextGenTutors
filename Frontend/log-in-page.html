@@ -44,43 +44,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const studentLoginButton = document.querySelector(".log-instudentcard");
-      const tutorLoginButton = document.querySelector(".log-intutorcard");
-
-      studentLoginButton.addEventListener("click", function() {
-        signIn("student");
-      });
-
-      tutorLoginButton.addEventListener("click", function() {
-        signIn("tutor");
-      });
-
-      function signIn(role) {
-        fetch(`/api/signin?role=${role}`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            username: "exampleUser",
-            password: "examplePass",
-          }),
-        })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Success:", data);
-            // Handle successful login here
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            // Handle error here
-          });
-      }
-    });
-  </script>
 </body>
 
 </html>
