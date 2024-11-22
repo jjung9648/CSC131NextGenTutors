@@ -3,6 +3,9 @@ require_once __DIR__ . '/../includes/notification.php';
 
 session_start();
 
+//setting the user id 1 for testing
+$_SESSION['user_id'] = 1;
+
 if (!isset($_SESSION['user_id'])) {
     // Redirect to login page if user is not authenticated
     header('Location: /Frontend/landing-page.html');
@@ -14,6 +17,7 @@ $userId = $_SESSION['user_id'];
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $receiveEmail = isset($_POST['receive_email']) ? 1 : 0;
     Notification::setUserPreference($userId, $receiveEmail);
+    Notification::addNotification($userId, "Your notification preferences have been updated.");
     echo "Preferences updated.";
 }
 

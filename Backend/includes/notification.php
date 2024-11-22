@@ -20,12 +20,13 @@ class Notification {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public static function setUserPreference($userId, $message) {
+    public static function setUserPreference($userId, $receiveEmail) {
         $conn = Database::getInstance()->getConnection();
-        $query = "INSERT INTO notifications (user_id, message) VALUES (:user_id, :message)";
+        $query = "INSERT INTO user_preferences (user_id, receive_email) VALUES (:user_id, :receive_email)
+                  ON DUPLICATE KEY UPDATE receive_email = :receive_email";
         $stmt = $conn->prepare($query);
         $stmt->bindParam(':user_id', $userId);
-        $stmt->bindParam(':receive_email', $message, PDO::PARAM_BOOL);
+        $stmt->bindParam(':receive_email', $receiveEmail, PDO::PARAM_BOOL);
         return $stmt->execute();
     }
 
