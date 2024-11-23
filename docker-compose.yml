@@ -1,0 +1,32 @@
+services:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: CSC131Project_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./Database/data:/var/lib/mysql
+      - ./Database/db-init-scripts:/docker-entrypoint-initdb.d
+
+  backend:
+    build: ./Backend
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    command: ["apache2-foreground"]
+    volumes:
+      - ./Backend:/var/www/html
+
+  frontend:
+    build: ./Frontend
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+    volumes:
+      - ./Frontend:/usr/share/nginx/html
