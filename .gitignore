@@ -1,1 +1,4 @@
+#socket file to connect with servers. Temporary use, not nesessary
 *.sock
+#View options for files or folders on macOS, not nesessary
+.DS_Store 
