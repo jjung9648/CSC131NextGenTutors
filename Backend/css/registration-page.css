@@ -1,0 +1,164 @@
+/* screen - registration-page */
+
+.registration-page {
+  align-items: flex-start;
+  background-color: var(--shady-lady);
+  display: flex;
+  height: 1045px;
+  overflow: hidden;
+  width: 1480px;
+}
+
+.registration-page .overlap-group1 {
+  height: 1060px;
+  position: relative;
+  width: 1480px;
+}
+
+.registration-page .overlap-group {
+  align-items: flex-start;
+  background-image: url(../img/rectangle-189-1.svg);
+  background-size: 100% 100%;
+  display: flex;
+  height: 1045px;
+  justify-content: flex-end;
+  left: 0;
+  min-width: 1480px;
+  padding: 0.0px 0;
+  position: absolute;
+  top: 0;
+}
+
+.registration-page .dashbored {
+  background-color: var(--lavender-gray);
+  border: 0px none;
+  height: 115px;
+  width: 1480px;
+}
+
+.registration-page .logo {
+  height: 159px;
+  left: 660px;
+  position: absolute;
+  top: 22px;
+  width: 160px;
+}
+
+.registration-page .arrow_back {
+  cursor: pointer;
+  height: 33px;
+  left: 21px;
+  position: absolute;
+  top: 38px;
+  width: 36px;
+}
+
+.registration-page .form-log-in {
+  align-items: center;
+  background-color: var(--prim);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  left: 389px;
+  min-height: 748px;
+  padding: 11px 0;
+  position: absolute;
+  top: 214px;
+  width: 701px;
+}
+
+.registration-page .place {
+  letter-spacing: 0;
+  line-height: 48px;
+  margin-right: 32.0px;
+  min-height: 56px;
+  text-align: center;
+  white-space: nowrap;
+  width: 593px;
+}
+
+.registration-page .line-26 {
+  height: 1px;
+  margin-top: 8px;
+  object-fit: cover;
+  width: 701px;
+}
+
+.registration-page .registerscard {
+  align-items: center;
+  background-color: var(--gravel-3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 63px;
+  margin-left: 1.0px;
+  margin-top: 66px;
+  overflow: hidden;
+  width: 360px;
+}
+
+.registration-page .flex-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 199px;
+  height: 15px;
+  margin-right: 5.0px;
+  margin-top: 14px;
+  min-width: 323px;
+}
+
+.registration-page .register-as-student {
+  min-width: 112px;
+}
+
+.registration-page .vector {
+  height: 7px;
+  width: 12px;
+}
+
+.registration-page .frame-32 {
+  background-color: var(--white);
+  height: 29px;
+  width: 360px;
+}
+
+.registration-page .registertcard {
+  align-items: center;
+  background-color: var(--gravel-3);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 55px;
+  margin-left: 1.0px;
+  margin-top: 26px;
+  overflow: hidden;
+  width: 360px;
+}
+
+.registration-page .flex-row-1 {
+  align-items: center;
+  display: flex;
+  gap: 214px;
+  height: 15px;
+  margin-right: 5.0px;
+  margin-top: 9px;
+  min-width: 323px;
+}
+
+.registration-page .register-as-tutor {
+  min-width: 97px;
+}
+
+.registration-page .vector-1 {
+  height: 7px;
+  margin-top: 2.0px;
+  width: 12px;
+}
+
+.registration-page .register-as {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 15px;
+}

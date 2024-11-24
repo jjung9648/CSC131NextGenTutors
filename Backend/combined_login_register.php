@@ -1,5 +1,13 @@
 <?php
 session_start();
+$url = "http://frontend/log-in.html";
+$htmlContent = file_get_contents($url);
+
+if ($htmlContent === FALSE) {
+    echo "Failed to load HTML from frontend container.";
+} else {
+    echo $htmlContent;
+}
 require_once __DIR__ . '/studentData.php';
 require_once __DIR__ . '/tutorData.php';
 require_once __DIR__ . '/userDecorator.php';
@@ -39,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<form method="POST" action="">
+<!-- <form method="POST" action="">
     <h2>Login</h2>
     <input type="email" name="email" placeholder="Email" required>
     <input type="password" name="password" placeholder="Password" required>
@@ -61,4 +69,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </select>
     <input type="hidden" name="action" value="register">
     <button type="submit">Register</button>
-</form>
+</form> -->
