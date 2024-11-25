@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="/Frontend/img/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="/Frontend/css/session-scheduling.css" />
+  <link rel="stylesheet" type="text/css" href="/Frontend/css/styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="/Frontend/css/globals.css" />
+  <title>Session Scheduling</title>
+</head>
+
+<body style="margin: 0; background: #afa7a7;">
+  <input type="hidden" id="anPageName" name="page" value="session-scheduling" />
+  <div class="container-center-horizontal">
+    <div class="session-scheduling screen">
+      <div class="overlap-group4">
+        <div class="template">
+          <div class="overlap-group2">
+            <img class="rectangle-188" src="/Frontend/img/rectangle-188-10.svg" alt="Background Design" />
+            <div class="dashbored"></div>
+
+            <!-- Navigation Rails -->
+            <div class="navigation-rail">
+              <img class="arrow_back" src="/Frontend/img/arrow-back.svg" alt="Back Arrow" />
+              <div class="menu-fab">
+                <a href="/Frontend/mail.php">
+                  <div class="fab">
+                    <div class="state-layer">
+                      <img class="icon" src="/Frontend/img/icon-12.svg" alt="Mail Icon" />
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="destinations">
+                <div class="nav-item">
+                  <a href="/Frontend/home.php">
+                    <div class="container-1">
+                      <div class="state-layer-1">
+                        <img class="icon" src="/Frontend/img/icon-13@2x.png" alt="Home Icon" />
+                      </div>
+                    </div>
+                    <div class="label">Home</div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="/Frontend/performance.php">
+                    <div class="container-2">
+                      <div class="state-layer-1">
+                        <img class="icon" src="/Frontend/img/icon-13@2x.png" alt="Performance Icon" />
+                      </div>
+                    </div>
+                    <div class="label">Performance</div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="/Frontend/scheduling.php">
+                    <div class="container-2">
+                      <div class="state-layer-1">
+                        <img class="icon" src="/Frontend/img/icon-13@2x.png" alt="Scheduling Icon" />
+                      </div>
+                    </div>
+                    <div class="label">Scheduling</div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="/Frontend/report.php">
+                    <div class="container-2">
+                      <div class="state-layer-1">
+                        <img class="icon" src="/Frontend/img/icon-13@2x.png" alt="Report Icon" />
+                      </div>
+                    </div>
+                    <div class="label">Report</div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="/Frontend/logging.php">
+                    <div class="container-2">
+                      <div class="state-layer-1">
+                        <img class="icon" src="/Frontend/img/icon-13@2x.png" alt="Logging Icon" />
+                      </div>
+                    </div>
+                    <div class="label">Logging</div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="/Frontend/logout.php">
+                    <div class="container-2">
+                      <div class="state-layer-1">
+                        <img class="icon" src="/Frontend/img/icon-13@2x.png" alt="Log Out Icon" />
+                      </div>
+                    </div>
+                    <div class="label">Log Out</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="frame-20">
+              <h1 class="book-appointment">Book Appointment</h1>
+              <form action="/Backend/bookAppointment.php" method="POST" class="input">
+                <div class="time-picker-inputs">
+                  <label for="hour">
+                    <input id="hour" type="number" name="hour" class="hour-input" min="1" max="12" value="7" />
+                  </label>
+                  <span class="separator">:</span>
+                  <label for="minute">
+                    <input id="minute" type="number" name="minute" class="minute-input" min="0" max="59" value="0" />
+                  </label>
+                </div>
+                <div class="period-selector">
+                  <label for="am">
+                    <input id="am" type="radio" name="period" value="AM" checked /> AM
+                  </label>
+                  <label for="pm">
+                    <input id="pm" type="radio" name="period" value="PM" /> PM
+                  </label>
+                </div>
+                <button type="submit" class="button">
+                  <div class="button-1">Book Appointment</div>
+                </button>
+              </form>
+            </div>
+
+            <img class="logo" src="/Frontend/img/logo-2@2x.png" alt="Company Logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
