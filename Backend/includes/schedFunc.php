@@ -29,7 +29,7 @@ class SessionScheduling {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    function createSession($sessionname, $tutor_id, $student_id, $student_name, $tutor_name, $start_time, $end_time, $dateSet) {
+    function createSession($sessionname, $tutor_id, $student_id, $start_time, $end_time, $dateSet) {
 
         $start= date('H:i:s', strtotime($start_time));
         $end= date('H:i:s', strtotime($end_time));
@@ -50,11 +50,29 @@ class SessionScheduling {
 
         if($safe == 1) {
             echo "Success.. Creating session...";
-            $query = "INSERT INTO sessions (sessionname, tutor_id, student_id, student_name, tutor_name, start_time, end_time, date) VALUES ('$sessionname', '$tutor_id', '$student_id', '$student_name', '$tutor_name', '$start', '$end', '$date')";
+            $query = "INSERT INTO sessions (sessionname, tutor_id, student_id, start_time, end_time, date) VALUES ('$sessionname', '$tutor_id', '$student_id', '$start', '$end', '$date')";
+        
             $stmt = $conn->prepare($query);
             $stmt->execute();
+
+            $lastID = $conn->lastInsertId('sessionnumber');
+            $query = "UPDATE sessions 
+                      JOIN tutors on tutors.id = sessions.tutor_id
+                      SET tutor_name = tutors.name
+                      WHERE sessionnumber = '$lastID'";
+            $stmt = $conn->prepare($query);
+            $stmt->execute();
+
+            $query = "UPDATE sessions 
+                      JOIN students on students.id = sessions.student_id
+                      SET student_name = students.name
+                      WHERE sessionnumber = '$lastID'";
+            $stmt = $conn->prepare($query);
+            $stmt->execute();    
+
             echo "This is your session number: ";
-            echo $conn->lastInsertId('sessionnumber');
+            echo $lastID;
+
             return;
         }
     }
