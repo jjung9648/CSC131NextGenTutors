@@ -2,10 +2,10 @@
 require_once './Backend/config/db.php';
 
 class SessionScheduling {
-    function getSession() {
+    function getSession($tutor_id) {
 
         $conn = Database::getInstance()->getConnection();
-        $query = "SELECT * FROM sessions";
+        $query = "SELECT * FROM sessions where tutor_id = $tutor_id";
         $stmt = $conn->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
