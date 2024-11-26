@@ -1,4 +1,29 @@
 /* screen - session-logging */
+:root {
+  --shady-lady: #B6B2D4;
+  --prim: #B6B2D4;
+  --gravel-3: #7B7B7B;
+  --lavender-gray: #E6E6FA;
+  --white: #FFFFFF;
+  --background-color: var(--shady-lady);
+  --height: 1024px;
+  --width: 1440px;
+  --overlap-group4-height: 1045px;
+  --overlap-group4-margin-left: -5px;
+  --overlap-group4-width: 1480px;
+  --template-height: 1045px;
+  --template-left: 0;
+  --template-top: 0;
+  --template-width: 1480px;
+  --overlap-group2-height: 1044px;
+  --overlap-group2-margin-left: -36px;
+  --overlap-group2-margin-top: -20px;
+  --overlap-group2-width: 1516px;
+  --rectangle-188-height: 1024px;
+  --rectangle-188-left: 41px;
+  --rectangle-188-top: 20px;
+  --rectangle-188-width: 1440px;
+}
 
 .session-logging {
   align-items: flex-start;
@@ -197,7 +222,7 @@
   align-items: center;
   background-color: var(--rose-dust);
   border-radius: 16px;
-  box-shadow: 0px 1px 3px #0000004c , 0px 4px 8px 3px #00000026;
+  box-shadow: 0px 1px 3px #0000004c, 0px 4px 8px 3px #00000026;
   cursor: pointer;
   display: inline-flex;
   flex: 0 0 auto;
