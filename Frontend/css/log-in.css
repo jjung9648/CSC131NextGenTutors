@@ -1,28 +1,32 @@
 /* screen - log-in */
+:root {
+  --shady-lady: #B6B2D4;
+  --prim: #B6B2D4;
+  --gravel-3: #7B7B7B;
+  --lavender-gray: #E6E6FA;
+  --white: #FFFFFF;
+}
 
 .log-in {
-  align-items: flex-start;
+  align-items: center;
   background-color: var(--shady-lady);
   display: flex;
-  height: 1116px;
+  justify-content: center;
+  height: 100vh;
   overflow: hidden;
-  width: 1465px;
+  width: 100vw;
 }
 
 .log-in .overlap-group {
-  height: 1136px;
-  margin-left: -36px;
-  margin-top: -20px;
+  height: 100%;
   position: relative;
-  width: 1516px;
+  width: 100%;
 }
 
 .log-in .rectangle-188 {
-  height: 1021px;
-  left: 36px;
+  height: 100%;
   position: absolute;
-  top: 115px;
-  width: 1465px;
+  width: 100%;
 }
 
 .log-in .form-log-in {
@@ -31,77 +35,76 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  left: 419px;
-  min-height: 820px;
-  padding: 11px 0;
-  position: absolute;
-  top: 204px;
-  width: 669px;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+  margin-left: 570px;
+  margin-top: 200px;
 }
 
 .log-in .title {
-  letter-spacing: 0;
+  font-size: 36px;
+  font-weight: normal;
   line-height: 48px;
-  min-height: 56px;
+  margin-bottom: 20px;
   text-align: center;
-  white-space: nowrap;
-  width: 593px;
 }
 
 .log-in .line-26 {
-  align-self: flex-start;
   height: 1px;
   margin-top: 8px;
   object-fit: cover;
-  width: 701px;
+  width: 100%;
 }
 
-.log-in .log-instudentcard {
-  margin-top: 60px;
+.log-in .log-instudentcard,
+.log-in .log-intutorcard {
+  align-items: center;
+  background-color: var(--gravel-3);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 55px;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+  border: 2px solid var(--prim);
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-.log-in .flex-row {
+.log-in .log-instudentcard:hover,
+.log-in .log-intutorcard:hover {
+  background-color: var(--prim);
+  border-color: var(--shady-lady);
+}
+
+.log-in .flex-row,
+.log-in .flex-row-1 {
   align-items: center;
   display: flex;
-  gap: 208px;
-  height: 15px;
-  margin-right: 5.0px;
-  margin-top: 9px;
-  min-width: 323px;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.log-in .sign-in-as-student {
-  min-width: 103px;
+.log-in .sign-in-as-student,
+.log-in .sign-in-as-tutor {
+  font-size: 16px;
+  color: white;
 }
 
 .log-in .vector {
-  height: 7px;
-  margin-top: 2.0px;
+  height: 12px;
   width: 12px;
 }
 
 .log-in .frame-32 {
   background-color: var(--white);
   height: 29px;
-  width: 360px;
-}
-
-.log-in .log-intutorcard {
-  margin-top: 24px;
-}
-
-.log-in .flex-row-1 {
-  align-items: center;
-  display: flex;
-  gap: 223px;
-  height: 15px;
-  margin-right: 5.0px;
-  margin-top: 9px;
-  min-width: 323px;
-}
-
-.log-in .sign-in-as-tutor {
-  min-width: 88px;
+  width: 100%;
 }
 
 .log-in .dashbored {
@@ -111,41 +114,52 @@
   left: 0;
   position: absolute;
   top: 0;
-  width: 1516px;
+  width: 100%;
 }
 
 .log-in .logo {
   height: 160px;
-  left: 690px;
   position: absolute;
-  top: 38px;
-  width: 159px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
 }
 
 .log-in .arrow_back {
   cursor: pointer;
   height: 33px;
-  left: 56px;
   position: absolute;
-  top: 53px;
-  width: 36px;
+  top: 20px;
+  left: 20px;
+  width: 33px;
 }
 
-.log-in .log {
-  align-items: center;
-  background-color: var(--gravel-3);
-  border-radius: 5px;
+.login-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 55px;
-  margin-left: 33.0px;
-  overflow: hidden;
-  width: 360px;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.log-in .sign-in-as {
-  letter-spacing: 0;
-  line-height: normal;
-  min-height: 15px;
+.login-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background-color: var(--prim);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: var(--shady-lady);
 }

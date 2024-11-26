@@ -1,56 +1,60 @@
 /* screen - registration-page */
+:root {
+  --shady-lady: #B6B2D4;
+  --prim: #B6B2D4;
+  --gravel-3: #7B7B7B;
+  --lavender-gray: #E6E6FA;
+  --white: #FFFFFF;
+}
 
 .registration-page {
-  align-items: flex-start;
+  align-items: center;
   background-color: var(--shady-lady);
   display: flex;
-  height: 1045px;
+  justify-content: center;
+  height: 100vh;
   overflow: hidden;
-  width: 1480px;
+  width: 100vw;
 }
 
 .registration-page .overlap-group1 {
-  height: 1060px;
+  height: 100%;
   position: relative;
-  width: 1480px;
+  width: 100%;
 }
 
 .registration-page .overlap-group {
-  align-items: flex-start;
-  background-image: url(../img/rectangle-189-1.svg);
-  background-size: 100% 100%;
-  display: flex;
-  height: 1045px;
-  justify-content: flex-end;
-  left: 0;
-  min-width: 1480px;
-  padding: 0.0px 0;
+  height: 100%;
   position: absolute;
-  top: 0;
+  width: 100%;
 }
 
 .registration-page .dashbored {
   background-color: var(--lavender-gray);
   border: 0px none;
   height: 115px;
-  width: 1480px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .registration-page .logo {
-  height: 159px;
-  left: 660px;
+  height: 160px;
   position: absolute;
-  top: 22px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 160px;
 }
 
 .registration-page .arrow_back {
   cursor: pointer;
   height: 33px;
-  left: 21px;
   position: absolute;
-  top: 38px;
-  width: 36px;
+  top: 20px;
+  left: 20px;
+  width: 33px;
 }
 
 .registration-page .form-log-in {
@@ -59,106 +63,103 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  left: 389px;
-  min-height: 748px;
-  padding: 11px 0;
-  position: absolute;
-  top: 214px;
-  width: 701px;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+  margin-left: 570px;
+  margin-top: 200px;
 }
 
-.registration-page .place {
-  letter-spacing: 0;
+.registration-page .title {
+  font-size: 36px;
+  font-weight: normal;
   line-height: 48px;
-  margin-right: 32.0px;
-  min-height: 56px;
+  margin-bottom: 20px;
   text-align: center;
-  white-space: nowrap;
-  width: 593px;
 }
 
 .registration-page .line-26 {
   height: 1px;
   margin-top: 8px;
   object-fit: cover;
-  width: 701px;
+  width: 100%;
 }
 
-.registration-page .registerscard {
+.registration-page .registerscard,
+.registration-page .registertcard {
   align-items: center;
   background-color: var(--gravel-3);
   border-radius: 5px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  height: 63px;
-  margin-left: 1.0px;
-  margin-top: 66px;
+  gap: 10px;
+  height: 55px;
+  justify-content: center;
+  margin-top: 20px;
   overflow: hidden;
-  width: 360px;
+  width: 100%;
+  border: 2px solid var(--prim);
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-.registration-page .flex-row {
-  align-items: flex-start;
+.registration-page .registerscard:hover,
+.registration-page .registertcard:hover {
+  background-color: var(--prim);
+  border-color: var(--shady-lady);
+}
+
+.registration-page .flex-row,
+.registration-page .flex-row-1 {
+  align-items: center;
   display: flex;
-  gap: 199px;
-  height: 15px;
-  margin-right: 5.0px;
-  margin-top: 14px;
-  min-width: 323px;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.registration-page .register-as-student {
-  min-width: 112px;
+.registration-page .register-as-student,
+.registration-page .register-as-tutor {
+  font-size: 16px;
+  color: white;
 }
 
 .registration-page .vector {
-  height: 7px;
+  height: 12px;
   width: 12px;
 }
 
 .registration-page .frame-32 {
   background-color: var(--white);
   height: 29px;
-  width: 360px;
+  width: 100%;
 }
 
-.registration-page .registertcard {
-  align-items: center;
-  background-color: var(--gravel-3);
-  border-radius: 5px;
+.register-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 55px;
-  margin-left: 1.0px;
-  margin-top: 26px;
-  overflow: hidden;
-  width: 360px;
-}
-
-.registration-page .flex-row-1 {
   align-items: center;
-  display: flex;
-  gap: 214px;
-  height: 15px;
-  margin-right: 5.0px;
-  margin-top: 9px;
-  min-width: 323px;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.registration-page .register-as-tutor {
-  min-width: 97px;
+.register-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.registration-page .vector-1 {
-  height: 7px;
-  margin-top: 2.0px;
-  width: 12px;
+.register-form button {
+  padding: 10px 20px;
+  background-color: var(--prim);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.registration-page .register-as {
-  letter-spacing: 0;
-  line-height: normal;
-  min-height: 15px;
+.register-form button:hover {
+  background-color: var(--shady-lady);
 }

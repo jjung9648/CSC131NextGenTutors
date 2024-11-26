@@ -5,59 +5,62 @@ require_once __DIR__ . '/userDecorator.php';
 require_once __DIR__ . '/tutor.php';
 require_once __DIR__ . '/student.php';
 require_once __DIR__ . '/loggingUserDecorator.php';
+require_once __DIR__ . '/db.php';
+
+header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $userType = $_POST['user_type'];
-    $action = $_POST['action'];
+    $data = json_decode(file_get_contents('php://input'), true);
+    $email = $data['email'];
+    $password = $data['password'];
+    $userType = $data['user_type'];
+    $action = $data['action'];
 
-    if ($userType == 'student') {
-        $user = new LoggingUserDecorator(new Student());
-    } else {
-        $user = new LoggingUserDecorator(new Tutor());
-    }
+    $db = Database::getInstance();
+    $conn = $db->getConnection();
 
     if ($action == 'login') {
-        $result = $user->signIn($email, $password);
-        if ($result) {
-            $_SESSION['user_id'] = $result['id']; 
-            $_SESSION['user_type'] = $userType; 
-            echo "Welcome, " . $result['name'];
-        } else {
-            echo "Invalid email or password.";
+        try {
+            if ($userType == 'student') {
+                $stmt = $conn->prepare("SELECT * FROM students WHERE email = :email");
+            } else {
+                $stmt = $conn->prepare("SELECT * FROM tutors WHERE email = :email");
+            }
+            $stmt->bindParam(':email', $email);
+            $stmt->execute();
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if ($user && password_verify($password, $user['password'])) {
+                session_start();
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['user_type'] = $userType;
+                echo json_encode(['success' => true, 'message' => "Welcome, " . $user['name']]);
+            } else {
+                echo json_encode(['success' => false, 'message' => "Invalid email or password."]);
+            }
+        } catch (PDOException $e) {
+            echo json_encode(['success' => false, 'message' => "Database error: " . $e->getMessage()]);
         }
     } elseif ($action == 'register') {
-        $success = $user->register($email, $password);
-        if ($success) {
-            echo "Registration successful.";
-        } else {
-            echo "Registration failed.";
+        try {
+            $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+            if ($userType == 'student') {
+                $stmt = $conn->prepare("INSERT INTO students (email, password) VALUES (:email, :password)");
+            } else {
+                $stmt = $conn->prepare("INSERT INTO tutors (email, password) VALUES (:email, :password)");
+            }
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':password', $hashedPassword);
+            $success = $stmt->execute();
+
+            if ($success) {
+                echo json_encode(['success' => true, 'message' => "Registration successful."]);
+            } else {
+                echo json_encode(['success' => false, 'message' => "Registration failed."]);
+            }
+        } catch (PDOException $e) {
+            echo json_encode(['success' => false, 'message' => "Database error: " . $e->getMessage()]);
         }
     }
 }
 ?>
-
-<form method="POST" action="">
-    <h2>Login</h2>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <select name="user_type" required>
-        <option value="student">Student</option>
-        <option value="tutor">Tutor</option>
-    </select>
-    <input type="hidden" name="action" value="login">
-    <button type="submit">Login</button>
-</form>
-
-<form method="POST" action="">
-    <h2>Register</h2>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required>
-    <select name="user_type" required>
-        <option value="student">Student</option>
-        <option value="tutor">Tutor</option>
-    </select>
-    <input type="hidden" name="action" value="register">
-    <button type="submit">Register</button>
-</form>
