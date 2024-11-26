@@ -1,4 +1,27 @@
 /* screen - payment-page */
+:root {
+  --shady-lady: #B6B2D4;
+  --lavender-gray: #E6E6FA;
+  --background-color: var(--shady-lady);
+  --height: 1024px;
+  --width: 1440px;
+  --overlap-group5-height: 1025px;
+  --overlap-group5-margin-left: -41px;
+  --overlap-group5-margin-top: -1.0px;
+  --overlap-group5-width: 1516px;
+  --dashbored-height: 115px;
+  --dashbored-left: 0;
+  --dashbored-top: 0;
+  --dashbored-width: 1516px;
+  --logo-height: 82px;
+  --logo-left: 144px;
+  --logo-top: 20px;
+  --logo-width: 72px;
+  --arrow-back-height: 34px;
+  --arrow-back-left: 63px;
+  --arrow-back-top: 11px;
+  --arrow-back-width: 35px;
+}
 
 .payment-page {
   align-items: flex-start;
