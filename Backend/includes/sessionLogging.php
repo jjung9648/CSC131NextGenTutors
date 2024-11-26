@@ -28,6 +28,9 @@ class sessionLogging{
         
         $duration = abs($end-$start);           //Gets difference between times
         $duration = date('H:i:s', $duration);   //Turns into date
-        
+
+        return [
+            'duration' => $duration
+        ];     
     }
 }
