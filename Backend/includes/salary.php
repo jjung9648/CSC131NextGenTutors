@@ -1,7 +1,7 @@
 <?php
 require_once 'db.php';
 
-class Tutor implements User {
+class TutorSal implements User {
     private $pdo;
 
     // Constructor to initialize database connection
