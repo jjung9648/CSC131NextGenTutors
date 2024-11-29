@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Login and Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        select {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" name="email" placeholder="Email" required />
+            <input type="password" id="login-password" name="password" placeholder="Password" required />
+            <select id="login-user-type" name="user_type" required>
+                <option value="student">Student</option>
+                <option value="tutor">Tutor</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+        <div class="message" id="login-message"></div>
+    </div>
+
+    <div class="container" style="margin-top: 20px;">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="email" id="register-email" name="email" placeholder="Email" required />
+            <input type="password" id="register-password" name="password" placeholder="Password" required />
+            <select id="register-user-type" name="user_type" required>
+                <option value="student">Student</option>
+                <option value="tutor">Tutor</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+        <div class="message" id="register-message"></div>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            const userType = document.getElementById('login-user-type').value;
+
+            // Create an object to hold the form data
+            const formData = {
+                email: email,
+                password: password,
+                user_type: userType,
+                action: 'login'
+            };
+
+            console.log('Request Data: ', formData); // Log the form data
+
+            // Send the form data to the server
+            fetch('/Backend/includes/combined_login_register.php', { // Corrected path
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+                .then(response => response.text()) // Get raw response text
+                .then(text => {
+                    console.log('Raw Response Text:', text);
+                    try {
+                        return JSON.parse(text); // Parse JSON
+                    } catch (error) {
+                        console.error('Error parsing JSON:', error);
+                        throw new Error('Invalid JSON response');
+                    }
+                })
+                .then(data => {
+                    console.log('Parsed Response Data:', data); // Print the response data to the console
+                    const messageElement = document.getElementById('login-message');
+                    if (data.success) {
+                        messageElement.textContent = 'Login successful!';
+                        messageElement.style.color = 'green';
+                    } else {
+                        messageElement.textContent = 'Login failed: ' + data.message;
+                        messageElement.style.color = 'red';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    const messageElement = document.getElementById('login-message');
+                    messageElement.textContent = 'An error occurred. Please try again.';
+                    messageElement.style.color = 'red';
+                });
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+            const userType = document.getElementById('register-user-type').value;
+
+            // Create an object to hold the form data
+            const formData = {
+                email: email,
+                password: password,
+                user_type: userType,
+                action: 'register'
+            };
+
+            // Send the form data to the server
+            fetch('/Backend/includes/combined_login_register.php', { // Corrected path
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+                .then(response => response.text()) // Get raw response text
+                .then(text => {
+                    console.log(text); // Log raw response text
+                    try {
+                        return JSON.parse(text); // Parse JSON
+                    } catch (error) {
+                        console.error('Error parsing JSON:', error);
+                        throw new Error('Invalid JSON response');
+                    }
+                })
+                .then(data => {
+                    console.log(data); // Print the response data to the console
+                    const messageElement = document.getElementById('register-message');
+                    if (data.success) {
+                        messageElement.textContent = 'Registration successful!';
+                        messageElement.style.color = 'green';
+                    } else {
+                        messageElement.textContent = 'Registration failed: ' + data.message;
+                        messageElement.style.color = 'red';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    const messageElement = document.getElementById('register-message');
+                    messageElement.textContent = 'An error occurred. Please try again.';
+                    messageElement.style.color = 'red';
+                });
+        });
+    </script>
+</body>
+
+</html>

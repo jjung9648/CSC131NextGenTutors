@@ -1,5 +1,5 @@
 <?php
-require_once './Backend/config/db.php';
+require_once __DIR__ . '/../config/db.php';
 
 class TutorData {
     public static function getTutorHoursData($tutorId) {

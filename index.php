@@ -7,7 +7,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'landing-page';
 
 switch ($page) {
     case 'landing-page':
-        include './Frontend/landing-page.html';
+        include './Frontend/test-login-register.html';
         break;
     case 'login':
         include './Frontend/log-in.html';

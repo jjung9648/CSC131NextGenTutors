@@ -5,16 +5,26 @@ require_once __DIR__ . '/userDecorator.php';
 require_once __DIR__ . '/tutor.php';
 require_once __DIR__ . '/student.php';
 require_once __DIR__ . '/loggingUserDecorator.php';
-require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/../config/db.php'; // Corrected path to db.php
+
+// Enable error reporting
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
-    $email = $data['email'];
-    $password = $data['password'];
-    $userType = $data['user_type'];
-    $action = $data['action'];
+
+    $email = $data['email'] ?? '';
+    $password = $data['password'] ?? '';
+    $userType = $data['user_type'] ?? '';
+    $action = $data['action'] ?? '';
+
+    if (empty($email) || empty($password) || empty($userType) || empty($action)) {
+        echo json_encode(['success' => false, 'message' => 'Missing required fields.']);
+        exit;
+    }
 
     $db = Database::getInstance();
     $conn = $db->getConnection();
@@ -61,6 +71,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } catch (PDOException $e) {
             echo json_encode(['success' => false, 'message' => "Database error: " . $e->getMessage()]);
         }
+    } else {
+        echo json_encode(['success' => false, 'message' => "Invalid action."]);
     }
 }
 ?>

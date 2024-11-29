@@ -1,6 +1,5 @@
 <?php
-require_once './Backend/config/db.php';
-
+require_once __DIR__ . '/../config/db.php';
 class StudentData {
     public static function getStudentData($studentId) {
         $conn = Database::getInstance()->getConnection();
