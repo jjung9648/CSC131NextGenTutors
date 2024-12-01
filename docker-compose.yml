@@ -1,31 +1,22 @@
 services:
-  php:
+  web:
     build: .
-    container_name: php_container
-    volumes:
-      - ./:/var/www/html
-      - ./apache.conf:/etc/apache2/sites-available/000-default.conf
     ports:
       - "8080:80"
-    environment:
-      DB_HOST: ${DB_HOST}
-      DB_PORT: ${DB_PORT}
-      DB_NAME: ${DB_NAME}
-      DB_USERNAME: ${DB_USERNAME}
-      DB_PASSWORD: ${DB_PASSWORD}
-
-  mysql:
-    image: mysql:5.7
-    container_name: mysql_container
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${MYSQL_DATABASE}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-    ports:
-      - "3307:3306"
     volumes:
-      - db_data:/var/lib/mysql
+      - ./www:/var/www/html
+    depends_on:
+      - db
 
-volumes:
-  db_data:
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: CSC131Project_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./www/database/data:/var/lib/mysql
+      - ./www/database/db-init-scripts:/docker-entrypoint-initdb.d
