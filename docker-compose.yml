@@ -1,0 +1,22 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./www:/var/www/html
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: CSC131Project_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./www/database/data:/var/lib/mysql
+      - ./www/database/db-init-scripts:/docker-entrypoint-initdb.d
