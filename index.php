@@ -3,7 +3,7 @@
 require_once __DIR__ . '/Backend/config/db.php';
 
 // Basic routing
-$page = isset($_GET['page']) ? $_GET['page'] : 'landing-page';
+$page = isset($_GET['page']) ? $_GET['page'] : 'login';
 
 switch ($page) {
     case 'landing-page':
