@@ -5,7 +5,7 @@ require_once __DIR__ . '/userDecorator.php';
 require_once __DIR__ . '/tutor.php';
 require_once __DIR__ . '/student.php';
 require_once __DIR__ . '/loggingUserDecorator.php';
-require_once __DIR__ . '/../config/db.php'; // Corrected path to db.php
+require_once __DIR__ . '/../config/db.php';
 
 // Enable error reporting
 error_reporting(E_ALL);
@@ -29,6 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $db = Database::getInstance();
     $conn = $db->getConnection();
 
+    if (!$conn) {
+        echo json_encode(['success' => false, 'message' => 'Database connection failed.']);
+        exit;
+    }
+
     if ($action == 'login') {
         try {
             if ($userType == 'student') {
@@ -44,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 session_start();
                 $_SESSION['user_id'] = $user['id'];
                 $_SESSION['user_type'] = $userType;
-                echo json_encode(['success' => true, 'message' => "Welcome, " . $user['name']]);
+                echo json_encode(['success' => true, 'message' => "Welcome, " . $user['email']]);
             } else {
                 echo json_encode(['success' => false, 'message' => "Invalid email or password."]);
             }
