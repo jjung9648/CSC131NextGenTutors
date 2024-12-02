@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   php:
     build: .
@@ -25,7 +27,8 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - db_data:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
+      - ./Database/migrations:/docker-entrypoint-initdb.d
 
 volumes:
-  db_data:
+  mysql_data:
