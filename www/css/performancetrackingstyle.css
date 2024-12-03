@@ -1,0 +1,1276 @@
+.performance-tracking {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .performance-tracking .overlap-wrapper {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+  }
+  
+  .performance-tracking .overlap {
+    position: relative;
+    width: 1480px;
+    height: 1045px;
+    top: -1px;
+    left: -3px;
+  }
+  
+  .performance-tracking .group {
+    position: absolute;
+    width: 1480px;
+    height: 1045px;
+    top: 0;
+    left: 0;
+  }
+  
+  .performance-tracking .overlap-group {
+    position: relative;
+    height: 1045px;
+  }
+  
+  .performance-tracking .rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 1px;
+    left: 3px;
+    background-color: #ffffff;
+  }
+  
+  .performance-tracking .template {
+    position: absolute;
+    width: 1480px;
+    height: 1045px;
+    top: 0;
+    left: 0;
+    background-color: #afa7a7;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .div {
+    position: relative;
+    width: 1532px;
+    height: 1045px;
+    top: -20px;
+    left: -36px;
+  }
+  
+  .performance-tracking .img {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 21px;
+    left: 39px;
+  }
+  
+  .performance-tracking .dashbored-wrapper {
+    position: absolute;
+    width: 1516px;
+    height: 115px;
+    top: 0;
+    left: 0;
+  }
+  
+  .performance-tracking .dashbored {
+    height: 115px;
+    background-color: #b6b2d4;
+    border: 0px none;
+    border-color: var(--system-colors-miscellaneous-kit-section-stroke);
+  }
+  
+  .performance-tracking .overlap-group-wrapper {
+    position: absolute;
+    width: 1440px;
+    height: 115px;
+    top: 14px;
+    left: 92px;
+  }
+  
+  .performance-tracking .overlap-2 {
+    position: relative;
+    height: 115px;
+  }
+  
+  .performance-tracking .dashbored-2 {
+    position: absolute;
+    width: 1440px;
+    height: 115px;
+    top: 0;
+    left: 0;
+    background-color: #b6b2d4;
+    border: 0px none;
+    border-color: var(--system-colors-miscellaneous-kit-section-stroke);
+  }
+  
+  .performance-tracking .div-wrapper {
+    position: absolute;
+    width: 1180px;
+    height: 75px;
+    top: 20px;
+    left: 184px;
+  }
+  
+  .performance-tracking .overlap-group-2 {
+    position: relative;
+    height: 75px;
+  }
+  
+  .performance-tracking .bottom-app-bar-wrapper {
+    position: absolute;
+    width: 1180px;
+    height: 75px;
+    top: 0;
+    left: 0;
+  }
+  
+  .performance-tracking .bottom-app-bar {
+    display: flex;
+    width: 1180px;
+    height: 75px;
+    align-items: center;
+    gap: 276px;
+    padding: 0px 16px 0px 4px;
+    position: relative;
+    background-color: #f2ecf4;
+    border-radius: 20px;
+  }
+  
+  .performance-tracking .leading-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .performance-tracking .div-2 {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .performance-tracking .container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .state-layer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .performance-tracking .icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .performance-tracking .avater-icon {
+    position: absolute;
+    width: 46px;
+    height: 38px;
+    top: 18px;
+    left: 1117px;
+    background-image: url(https://cdn.animaapp.com/projects/674b6d1a8d666a8b36b3d7b1/releases/674bb2d68d666a8b36b3d818/img/generic-avatar@2x.png);
+    background-size: 100% 100%;
+  }
+  
+  .performance-tracking .logo {
+    position: absolute;
+    width: 65px;
+    height: 67px;
+    top: 26px;
+    left: 99px;
+  }
+  
+  .performance-tracking .component {
+    position: absolute;
+    width: 86px;
+    height: 1030px;
+    top: 12px;
+    left: 36px;
+  }
+  
+  .performance-tracking .overlap-3 {
+    position: relative;
+    height: 1030px;
+  }
+  
+  .performance-tracking .navigation-rail {
+    display: flex;
+    flex-direction: column;
+    width: 86px;
+    height: 1030px;
+    align-items: center;
+    gap: 60px;
+    padding: 44px 0px 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdf7ff;
+  }
+  
+  .performance-tracking .arrow-back {
+    position: relative;
+    width: 36px;
+    height: 33px;
+  }
+  
+  .performance-tracking .menu-fab {
+    width: 80px;
+    gap: 4px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .performance-tracking .FAB-elevation {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .FAB {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #a55f77;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--m3-elevation-light-3);
+  }
+  
+  .performance-tracking .icon-wrapper {
+    padding: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .performance-tracking .destinations {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 397px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 5px 0px;
+    position: absolute;
+    top: calc(50.00% - 195px);
+    left: 0;
+  }
+  
+  .performance-tracking .nav-item {
+    margin-top: -4.50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 0px 2px 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .performance-tracking .state-layer-wrapper {
+    background-color: #7c6ba7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .img-wrapper {
+    padding: 4px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+  .performance-tracking .label {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--m3-label-medium-prominent-font-family);
+    font-weight: var(--m3-label-medium-prominent-font-weight);
+    color: #1d1b20;
+    font-size: var(--m3-label-medium-prominent-font-size);
+    text-align: center;
+    letter-spacing: var(--m3-label-medium-prominent-letter-spacing);
+    line-height: var(--m3-label-medium-prominent-line-height);
+    font-style: var(--m3-label-medium-prominent-font-style);
+  }
+  
+  .performance-tracking .nav-item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 0px 2px 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .performance-tracking .container-2 {
+    flex-direction: column;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .text-wrapper {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--m3-label-medium-font-family);
+    font-weight: var(--m3-label-medium-font-weight);
+    color: #45414a;
+    font-size: var(--m3-label-medium-font-size);
+    text-align: center;
+    letter-spacing: var(--m3-label-medium-letter-spacing);
+    line-height: var(--m3-label-medium-line-height);
+    font-style: var(--m3-label-medium-font-style);
+  }
+  
+  .performance-tracking .nav-item-3 {
+    margin-bottom: -4.50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 0px 2px 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .performance-tracking .pie-chart {
+    position: absolute;
+    width: 41px;
+    height: 40px;
+    top: 384px;
+    left: 22px;
+  }
+  
+  .performance-tracking .log-out {
+    position: absolute;
+    width: 38px;
+    height: 39px;
+    top: 667px;
+    left: 23px;
+  }
+  
+  .performance-tracking .inbox {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 523px;
+    left: 25px;
+  }
+  
+  .performance-tracking .schedule {
+    position: absolute;
+    width: 37px;
+    height: 38px;
+    top: 454px;
+    left: 25px;
+  }
+  
+  .performance-tracking .home {
+    position: absolute;
+    width: 38px;
+    height: 31px;
+    top: 316px;
+    left: 24px;
+  }
+  
+  .performance-tracking .icon-2 {
+    width: 34px;
+    height: 38px;
+    top: 590px;
+    left: 26px;
+    position: absolute;
+  }
+  
+  .performance-tracking .group-2 {
+    position: relative;
+    width: 80px;
+    height: 109px;
+  }
+  
+  .performance-tracking .overlap-group-3 {
+    position: relative;
+    height: 109px;
+  }
+  
+  .performance-tracking .menu-fab-2 {
+    top: 1px;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .performance-tracking .FAB-elevation-2 {
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #a55f77;
+    border-radius: 16px;
+  }
+  
+  .performance-tracking .icon-3 {
+    width: 24px;
+    height: 24px;
+    top: 69px;
+    left: 28px;
+    position: absolute;
+  }
+  
+  .performance-tracking .notifications {
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    top: 0;
+    left: 23px;
+  }
+  
+  .performance-tracking .FAB-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 218px;
+    left: 252px;
+    background-color: #a55f77;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--m3-elevation-light-3);
+  }
+  
+  .performance-tracking .group-3 {
+    position: absolute;
+    width: 80px;
+    height: 109px;
+    top: 173px;
+    left: 161px;
+  }
+  
+  .performance-tracking .template-2 {
+    position: absolute;
+    width: 1443px;
+    height: 1022px;
+    top: 0;
+    left: 0;
+    background-color: #afa7a7;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .overlap-4 {
+    position: relative;
+    width: 1532px;
+    height: 1042px;
+    top: -20px;
+    left: -36px;
+  }
+  
+  .performance-tracking .rectangle-2 {
+    position: absolute;
+    width: 1440px;
+    height: 1021px;
+    top: 21px;
+    left: 39px;
+  }
+  
+  .performance-tracking .group-4 {
+    position: absolute;
+    width: 1180px;
+    height: 75px;
+    top: 20px;
+    left: 134px;
+  }
+  
+  .performance-tracking .logo-2 {
+    position: absolute;
+    width: 65px;
+    height: 67px;
+    top: 26px;
+    left: 49px;
+  }
+  
+  .performance-tracking .component-2 {
+    position: absolute;
+    width: 86px;
+    height: 1022px;
+    top: 20px;
+    left: 36px;
+  }
+  
+  .performance-tracking .overlap-5 {
+    position: relative;
+    height: 1022px;
+  }
+  
+  .performance-tracking .navigation-rail-2 {
+    display: flex;
+    flex-direction: column;
+    width: 86px;
+    height: 1022px;
+    align-items: center;
+    gap: 60px;
+    padding: 44px 0px 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdf7ff;
+  }
+  
+  .performance-tracking .pie-chart-2 {
+    position: absolute;
+    width: 41px;
+    height: 40px;
+    top: 381px;
+    left: 22px;
+  }
+  
+  .performance-tracking .log-out-2 {
+    top: 662px;
+    position: absolute;
+    width: 38px;
+    height: 39px;
+    left: 23px;
+  }
+  
+  .performance-tracking .inbox-2 {
+    position: absolute;
+    width: 35px;
+    height: 36px;
+    top: 519px;
+    left: 25px;
+  }
+  
+  .performance-tracking .schedule-2 {
+    position: absolute;
+    width: 37px;
+    height: 38px;
+    top: 450px;
+    left: 25px;
+  }
+  
+  .performance-tracking .home-2 {
+    position: absolute;
+    width: 38px;
+    height: 31px;
+    top: 313px;
+    left: 24px;
+  }
+  
+  .performance-tracking .icon-4 {
+    width: 34px;
+    height: 38px;
+    top: 586px;
+    left: 26px;
+    position: absolute;
+  }
+  
+  .performance-tracking .group-5 {
+    position: absolute;
+    width: 80px;
+    height: 108px;
+    top: 158px;
+    left: 39px;
+  }
+  
+  .performance-tracking .overlap-6 {
+    position: relative;
+    height: 108px;
+  }
+  
+  .performance-tracking .menu-fab-3 {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .performance-tracking .icon-5 {
+    width: 23px;
+    height: 23px;
+    top: 63px;
+    left: 27px;
+    position: absolute;
+  }
+  
+  .performance-tracking .main-content-wrapper {
+    position: absolute;
+    width: 1041px;
+    height: 396px;
+    top: 303px;
+    left: 298px;
+  }
+  
+  .performance-tracking .main-content {
+    height: 396px;
+  }
+  
+  .performance-tracking .energy-consumption {
+    width: 1041px;
+    height: 396px;
+  }
+  
+  .performance-tracking .overlap-7 {
+    position: relative;
+    height: 396px;
+  }
+  
+  .performance-tracking .card-wrapper {
+    position: absolute;
+    width: 1041px;
+    height: 396px;
+    top: 0;
+    left: 0;
+  }
+  
+  .performance-tracking .card {
+    position: relative;
+    width: 1043px;
+    height: 398px;
+    top: -1px;
+    left: -1px;
+    border-radius: 20px;
+    border: 0px none;
+  }
+  
+  .performance-tracking .overlap-group-4 {
+    position: relative;
+    width: 1067px;
+    height: 422px;
+    top: -7px;
+    left: -13px;
+    background-image: url(https://cdn.animaapp.com/projects/674b6d1a8d666a8b36b3d7b1/releases/674bb2d68d666a8b36b3d818/img/shadow.png);
+    background-size: 100% 100%;
+  }
+  
+  .performance-tracking .color {
+    position: absolute;
+    width: 1041px;
+    height: 396px;
+    top: 7px;
+    left: 13px;
+  }
+  
+  .performance-tracking .title {
+    position: absolute;
+    width: 1041px;
+    height: 41px;
+    top: 7px;
+    left: 13px;
+  }
+  
+  .performance-tracking .chart {
+    position: absolute;
+    width: 807px;
+    height: 281px;
+    top: 91px;
+    left: 212px;
+  }
+  
+  .performance-tracking .months {
+    position: absolute;
+    width: 778px;
+    height: 15px;
+    top: 267px;
+    left: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px none;
+  }
+  
+  .performance-tracking .text-wrapper-2 {
+    position: absolute;
+    width: 17px;
+    top: 0;
+    left: 758px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-3 {
+    position: absolute;
+    width: 18px;
+    top: 0;
+    left: 689px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-4 {
+    position: absolute;
+    width: 18px;
+    top: 0;
+    left: 619px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-5 {
+    position: absolute;
+    width: 16px;
+    top: 0;
+    left: 552px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-6 {
+    position: absolute;
+    width: 18px;
+    top: 0;
+    left: 483px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-7 {
+    position: absolute;
+    width: 16px;
+    top: 0;
+    left: 414px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-8 {
+    position: absolute;
+    width: 18px;
+    top: 0;
+    left: 346px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-9 {
+    position: absolute;
+    width: 19px;
+    top: 0;
+    left: 276px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-10 {
+    position: absolute;
+    width: 17px;
+    top: 0;
+    left: 206px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-11 {
+    position: absolute;
+    width: 20px;
+    top: 0;
+    left: 136px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-12 {
+    position: absolute;
+    width: 16px;
+    top: 0;
+    left: 68px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .text-wrapper-13 {
+    position: absolute;
+    width: 17px;
+    top: 0;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .levels {
+    position: absolute;
+    width: 18px;
+    height: 255px;
+    top: -1px;
+    left: -1px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 0px none;
+  }
+  
+  .performance-tracking .element {
+    position: absolute;
+    width: 16px;
+    top: 237px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .element-2 {
+    position: absolute;
+    width: 16px;
+    top: 198px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .element-3 {
+    position: absolute;
+    width: 16px;
+    top: 159px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .element-4 {
+    position: absolute;
+    width: 16px;
+    top: 120px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .element-5 {
+    position: absolute;
+    width: 16px;
+    top: 81px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .element-6 {
+    position: absolute;
+    width: 16px;
+    top: 42px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .element-7 {
+    position: absolute;
+    width: 20px;
+    top: 3px;
+    left: 0;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .overlap-8 {
+    position: absolute;
+    width: 758px;
+    height: 244px;
+    top: 6px;
+    left: 38px;
+  }
+  
+  .performance-tracking .grid {
+    position: absolute;
+    width: 757px;
+    height: 242px;
+    top: 0;
+    left: 0;
+  }
+  
+  .performance-tracking .waves {
+    position: absolute;
+    width: 758px;
+    height: 198px;
+    top: 46px;
+    left: 0;
+    background-image: url(https://cdn.animaapp.com/projects/674b6d1a8d666a8b36b3d7b1/releases/674bb2d68d666a8b36b3d818/img/-1.png);
+    background-size: 100% 100%;
+  }
+  
+  .performance-tracking .donnut-charts {
+    position: absolute;
+    width: 164px;
+    height: 67px;
+    top: 73px;
+    left: 19px;
+  }
+  
+  .performance-tracking .element-8 {
+    position: relative;
+    width: 166px;
+    height: 69px;
+    top: -1px;
+    left: -1px;
+    border-radius: 20px;
+    border: 0px none;
+  }
+  
+  .performance-tracking .sub-title {
+    position: absolute;
+    top: 33px;
+    left: 73px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #869aac;
+    font-size: 10px;
+    letter-spacing: 0.20px;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .title-2 {
+    position: absolute;
+    top: 14px;
+    left: 73px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .chart-2 {
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    top: 1px;
+    left: 0;
+  }
+  
+  .performance-tracking .overlap-group-5 {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 1px;
+    left: 1px;
+  }
+  
+  .performance-tracking .progress-wrapper {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+  }
+  
+  .performance-tracking .progress {
+    position: relative;
+    height: 60px;
+    background-color: #afa7a7;
+    border-radius: 30.24px;
+    background-image: url(https://cdn.animaapp.com/projects/674b6d1a8d666a8b36b3d7b1/releases/674bb2d68d666a8b36b3d818/img/oval-copy-2@2x.png);
+    background-size: 100% 100%;
+  }
+  
+  .performance-tracking .progress-2 {
+    position: absolute;
+    width: 27px;
+    height: 16px;
+    top: 0;
+    left: 26px;
+  }
+  
+  .performance-tracking .number {
+    position: absolute;
+    top: 21px;
+    left: 16px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 300;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .performance-tracking .jane-default {
+    display: flex;
+    flex-direction: column;
+    width: 147px;
+    height: 382px;
+    align-items: flex-start;
+    position: absolute;
+    top: 214px;
+    left: 724px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .dropdown-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3px;
+    padding: 12px 21px 12px 12px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #494949;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+  }
+  
+  .performance-tracking .select-the-state {
+    position: relative;
+    flex: 1;
+    margin-top: -1.00px;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .performance-tracking .vector {
+    position: relative;
+    width: 12px;
+    height: 7px;
+  }
+  
+  .performance-tracking .frame {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .performance-tracking .rectangle-3 {
+    position: absolute;
+    width: 475px;
+    height: 60px;
+    top: 739px;
+    left: 299px;
+  }
+  
+  .performance-tracking .rectangle-4 {
+    position: absolute;
+    width: 102px;
+    height: 10px;
+    top: 764px;
+    left: 622px;
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  
+  .performance-tracking .text-wrapper-14 {
+    position: absolute;
+    top: 738px;
+    left: 636px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .performance-tracking .text-wrapper-15 {
+    position: absolute;
+    top: 738px;
+    left: 383px;
+    font-family: "Roboto", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .performance-tracking .rectangle-5 {
+    position: absolute;
+    width: 102px;
+    height: 10px;
+    top: 764px;
+    left: 349px;
+    background-color: #000000;
+    border-radius: 5px;
+  }
+  
+  .performance-tracking .rectangle-6 {
+    position: absolute;
+    width: 80px;
+    height: 8px;
+    top: 765px;
+    left: 623px;
+    background-color: #05c985;
+    border-radius: 5px;
+  }
+  
+  .performance-tracking .profile-info {
+    position: absolute;
+    width: 156px;
+    height: 137px;
+    top: 119px;
+    left: 719px;
+  }
+  
+  .performance-tracking .home-image {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    left: 33px;
+  }
+  
