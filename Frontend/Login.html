@@ -1,165 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/globals.css" />
-    <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="log-in">
-      <div class="div">
-        <div class="form-log-in">
-          <div class="overlap">
-            <div class="logint" onclick="toggleLogint()">
-              <img class="vector" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
-              <div class="frame"></div>
-              <div class="text-wrapper">Sign in as Tutor</div>
-            </div>
-            <div class="loginbeforest" onclick="toggleLogin()">
-              <img class="vector" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
-              <div class="frame"></div>
-              <div class="text-wrapper">Sign in as Student</div>
-            </div>
-            <div class="loginst" id="loginst" style="display: none;">
-              <div class="overlap-group">
-                <div class="frame-2">
-                  <div class="text-wrapper-2">Sign in as Student</div>
-                  <img class="img" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
-                </div>
-                <div class="frame-3" id="studentlogginclose"></div>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Frontend/css/globals.css" />
+  <link rel="stylesheet" href="/Frontend/css/styleguide.css" />
+  <link rel="stylesheet" href="/Frontend/css/style.css" />
+  <title>Log In</title>
+</head>
+
+<body>
+  <div class="log-in">
+    <div class="div">
+      <div class="form-log-in">
+        <div class="overlap">
+          <div class="logint" onclick="showLoginForm('tutor')">
+            <img class="vector" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
+            <div class="frame"></div>
+            <div class="text-wrapper">Sign in as Tutor</div>
+          </div>
+          <div class="loginbeforest" onclick="showLoginForm('student')">
+            <img class="vector" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
+            <div class="frame"></div>
+            <div class="text-wrapper">Sign in as Student</div>
+          </div>
+          <div class="loginst" id="loginst" style="display: none;">
+            <div class="overlap-group">
+              <div class="frame-2">
+                <div class="text-wrapper-2">Sign in as Student</div>
+                <img class="img" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
               </div>
-              <form class="item" id="login-form" method="POST" action="Login.php">
-                <div class="input-field">
-                  <div class="text-wrapper-3">Email/Username:</div>
-                  <div class="input">
-                    <input type="text" name="student_id" class="enter-here" placeholder="Student ID" required>
-                  </div>
-                </div>
-                <div class="input-field-2">
-                  <div class="text-wrapper-3">Password:</div>
-                  <div class="enter-here-wrapper">
-                    <input type="password" name="student_password" class="enter-here" placeholder="Student Password" required>
-                  </div>
-                </div>
-                <div class="frame-4">
-                  <div class="signin-button"><button type="submit" class="signin-text" name="action" value="loginStudent">Sign in</button></div>
-                  <div class="text-link"><div class="text-link-2">Forgot password?</div></div>
-                  <img class="face" src="https://c.animaapp.com/XDwzz78J/img/face-1@2x.png" />
-                  <img class="google" src="https://c.animaapp.com/XDwzz78J/img/google-1@2x.png" />
-                  <img
-                    class="microsoft-logo-svg"
-                    src="https://c.animaapp.com/XDwzz78J/img/microsoft-logo-svg-1@2x.png"
-                  />
-                  <div class="text-wrapper-5">Or Sign in Using</div>
-                </div>
-              </form>
+              <div class="frame-3" id="studentlogginclose"></div>
             </div>
-            <div class="logaftert" id="logaftert" style="display: none;">
-              <div class="overlap-group">
-                <div class="frame-2">
-                  <div class="text-wrapper-2">Sign in as Tutor</div>
-                  <img class="img" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
+            <form class="item" id="login-form" method="POST" action="Login.php">
+              <div class="input-field">
+                <div class="text-wrapper-3">Email/Username:</div>
+                <div class="input">
+                  <input type="text" id="email" name="email" class="enter-here" placeholder="Student ID" required>
                 </div>
-                <div class="frame-3" id="teacherlogclose"></div>
               </div>
-              <form class="overlap-2 id="login-form" method="POST" action="Login.php">
-                <div class="item-2">
-                  <div class="input-field-3">
-                    <div class="text-wrapper-3">Email/Username:</div>
-                    <div class="input-2">
-                      <input type="text" name="tutor_id" class="enter-here" placeholder="Tutor ID" required>
-                    </div>
-                  </div>
-                  <div class="input-field-2">
-                    <div class="text-wrapper-3">Password:</div>
-                    <div class="enter-here-wrapper">
-                      <input type="password" name="tutor_password" class="enter-here" placeholder="Tutor Password" required>
-                    </div>
-                  </div>
+              <div class="input-field-2">
+                <div class="text-wrapper-3">Password:</div>
+                <div class="enter-here-wrapper">
+                  <input type="password" id="password" name="password" class="enter-here" placeholder="Student Password"
+                    required>
                 </div>
-                <div class="frame-5">
-                  <div class="signin-tutor"><button type="submit" class="signinbuttontutortx" name="action" value="loginTutor">Sign in</button></div>
-                  <div class="text-link-wrapper"><div class="text-link-2">Forgot password?</div></div>
-                  <img class="face" src="https://c.animaapp.com/XDwzz78J/img/face-1-1@2x.png" />
-                  <img class="google" src="https://c.animaapp.com/XDwzz78J/img/google-1-1@2x.png" />
-                  <img
-                    class="microsoft-logo-svg"
-                    src="https://c.animaapp.com/XDwzz78J/img/microsoft-logo-svg-1-1@2x.png"
-                  />
-                  <div class="text-wrapper-5">Or Sign in Using</div>
+              </div>
+              <input type="hidden" id="user_type" name="user_type" />
+              <div class="frame-4">
+                <div class="signin-button"><button type="submit" class="signin-text" name="action"
+                    value="loginStudent">Sign in</button></div>
+                <div class="text-link">
                 </div>
+                <img class="google" src="https://c.animaapp.com/XDwzz78J/img/google-1@2x.png" />
+              </div>
+              <div id="login-message"></div>
             </form>
+          </div>
+          <div class="logaftert" id="logaftert" style="display: none;">
+            <div class="overlap-group">
+              <div class="frame-2">
+                <div class="text-wrapper-2">Sign in as Tutor</div>
+                <img class="img" src="https://c.animaapp.com/XDwzz78J/img/vector-3@2x.png" />
+              </div>
+              <div class="frame-3" id="teacherlogclose"></div>
             </div>
+            <form class="item" id="register-form" method="POST" action="Register.php">
+              <div class="input-field">
+                <div class="text-wrapper-3">Email/Username:</div>
+                <div class="input">
+                  <input type="text" id="register-email" name="email" class="enter-here" placeholder="Tutor ID"
+                    required>
+                </div>
+              </div>
+              <div class="input-field-2">
+                <div class="text-wrapper-3">Password:</div>
+                <div class="enter-here-wrapper">
+                  <input type="password" id="register-password" name="password" class="enter-here"
+                    placeholder="Tutor Password" required>
+                </div>
+              </div>
+              <div class="frame-4">
+                <div class="signin-button"><button type="submit" class="signin-text" name="action"
+                    value="registerTutor">Register</button></div>
+                <div class="text-link">
+                  <div class="text-link-2">Forgot password?</div>
+                </div>
+                <img class="google" src="https://c.animaapp.com/XDwzz78J/img/google-1@2x.png" />
+              </div>
+              <div id="register-message"></div>
+            </form>
           </div>
-          <img class="line" src="https://c.animaapp.com/XDwzz78J/img/line-26.png" />
-          <div class="text-wrapper-6">Sign in</div>
         </div>
-        <div class="overlap-3">
-          <div class="log-in-page-upper">
-            <img class="arrow-back" src="https://c.animaapp.com/XDwzz78J/img/arrow-back@2x.png" />
-          </div>
-          <img class="logo" src="https://c.animaapp.com/XDwzz78J/img/logo@2x.png" />
+        <img class="line" src="https://c.animaapp.com/XDwzz78J/img/line-26.png" />
+        <div class="text-wrapper-6">Sign in</div>
+      </div>
+      <div class="overlap-3">
+        <div class="log-in-page-upper">
         </div>
+        <img class="logo" src="https://c.animaapp.com/XDwzz78J/img/logo@2x.png" />
       </div>
     </div>
-  </body>
+  </div>
+  <script src="/Frontend/js/login-register.js"></script>
+</body>
+
 </html>
-
-<script>
-  // Toggle loginst
-  function toggleLogin() {
-        const loginst = document.getElementById('loginst');
-        if (loginst.style.display === 'none') {
-            loginst.style.display = 'block';
-        } else {
-            loginst.style.display = 'none';
-        }
-  }
-
-    // Event listener for closing `loginst`
-    document.addEventListener("click", function (event) {
-        const loginst = document.getElementById("loginst");
-        const studentLoginClose = document.getElementById("studentlogginclose");
-        const logaftert = document.getElementById("logaftert");
-        const teacherlogclose = document.getElementById("teacherlogclose");
-
-        // Close `loginst` if clicked outside or on `studentlogginclose`
-        if (
-            loginst.style.display === "block" &&
-            !event.target.closest("#loginst") &&
-            !event.target.closest(".loginbeforest")
-        ) {
-            loginst.style.display = "none";
-        }
-
-        // close `loginst` if `studentlogginclose` is clicked
-        if (event.target.closest("#studentlogginclose")) {
-            loginst.style.display = "none";
-        }
-
-        // Close `logaftert` if clicked outside or on `studentlogginclose`
-        if (
-            logaftert.style.display === "block" &&
-            !event.target.closest("#logaftert") &&
-            !event.target.closest(".logint")
-        ) {
-            logaftert.style.display = "none";
-        }
-
-        // close `logaftert` if `teacherlogclose` is clicked
-        if (event.target.closest("#teacherlogclose")) {
-            logaftert.style.display = "none";
-        }
-    });
-
-  // Toggle logaftert
-    function toggleLogint() {
-        const loginst = document.getElementById('logaftert');
-        if (loginst.style.display === 'none') {
-            loginst.style.display = 'block';
-        } else {
-            loginst.style.display = 'none';
-        }
-    }
-</script>

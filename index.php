@@ -3,14 +3,14 @@
 require_once __DIR__ . '/Backend/config/db.php';
 
 // Basic routing
-$page = isset($_GET['page']) ? $_GET['page'] : 'login';
+$page = isset($_GET['page']) ? $_GET['page'] : 'landing-page';
 
 switch ($page) {
     case 'landing-page':
-        include './Frontend/test-login-register.html';
+        include './Frontend/index.html';
         break;
     case 'login':
-        include './Frontend/log-in.html';
+        include './Frontend/Login.html';
         break;
     case 'register':
         include './Frontend/registration-page.html';

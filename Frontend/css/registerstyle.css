@@ -28,17 +28,41 @@
 .registration-page .overlap-group {
   position: absolute;
   width: 360px;
-  height: 614px;
-  top: 141px;
-  left: 171px;
+  height: 34px;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.registration-page .frame-2 {
+  position: absolute;
+  width: 360px;
+  height: 34px;
+  top: 0;
+  left: 0;
+  background-color: #494949;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+}
+
+.registration-page .text-wrapper-2 {
+  position: absolute;
+  top: 8px;
+  left: 17px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .registration-page .registertbeforeopen {
   position: absolute;
   width: 360px;
   height: 63px;
-  top: 89px;
-  left: 0;
+  top: 250px;
+  left: 150px;
   background-color: #494949;
   border-radius: 5px;
   overflow: hidden;
@@ -61,6 +85,7 @@
   background-color: #ffffff;
 }
 
+
 .registration-page .text-wrapper {
   position: absolute;
   top: 14px;
@@ -77,11 +102,19 @@
   position: absolute;
   width: 360px;
   height: 63px;
-  top: 0;
-  left: 0;
+  top: 150px;
+  left: 150px;
   background-color: #494949;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.registration-page .frame-3 {
+  position: absolute;
+  width: 360px;
+  height: 34px;
+  top: 0;
+  left: 0;
 }
 
 .registration-page .registers {
@@ -91,8 +124,8 @@
   height: 595px;
   align-items: flex-start;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 100px;
+  left: 150px;
 }
 
 .registration-page .div-2 {
@@ -167,8 +200,7 @@
   min-width: 240px;
   height: 38px;
   align-items: center;
-  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
-    var(--size-space-400);
+  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
   margin-left: -1.00px;
   margin-right: -1.00px;
   background-color: var(--color-background-default-default);
@@ -184,7 +216,7 @@
 
 .registration-page .enter-here {
   position: relative;
-  width: 106px;
+  width: 300px;
   height: 17px;
   margin-top: -2.50px;
   margin-bottom: -0.50px;
@@ -234,8 +266,7 @@
   min-width: 240px;
   height: 42px;
   align-items: center;
-  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
-    var(--size-space-400);
+  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
   margin-top: -1.00px;
   margin-left: -1.00px;
   margin-right: -1.00px;
@@ -260,8 +291,7 @@
 .registration-page .input-2 {
   min-width: 240px;
   align-items: center;
-  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
-    var(--size-space-400);
+  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
   flex: 0 0 auto;
   margin-left: -1.00px;
   margin-right: -1.00px;
@@ -278,7 +308,7 @@
 
 .registration-page .enter-here-2 {
   position: relative;
-  width: 106px;
+  width: 300px;
   height: 17px;
 }
 
@@ -330,11 +360,11 @@
   display: flex;
   flex-direction: column;
   width: 360px;
-  height: 525px;
+  height: 595px;
   align-items: flex-start;
   position: absolute;
-  top: 89px;
-  left: 0;
+  top: 100px;
+  left: 150px;
 }
 
 .registration-page .item {
@@ -355,8 +385,7 @@
   min-width: 240px;
   height: 42px;
   align-items: center;
-  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
-    var(--size-space-400);
+  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
   margin-bottom: -1.00px;
   margin-left: -1.00px;
   margin-right: -1.00px;
@@ -373,15 +402,14 @@
 
 .registration-page .enter-here-3 {
   position: relative;
-  width: 126px;
+  width: 300px;
   height: 16px;
 }
 
 .registration-page .input-4 {
   min-width: 240px;
   align-items: center;
-  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
-    var(--size-space-400);
+  padding: var(--size-space-300) var(--size-space-400) var(--size-space-300) var(--size-space-400);
   flex: 0 0 auto;
   margin-bottom: -1.00px;
   margin-left: -1.00px;
@@ -399,7 +427,7 @@
 
 .registration-page .enter-here-4 {
   position: relative;
-  width: 118px;
+  width: 300px;
   height: 22px;
 }
 
@@ -435,6 +463,17 @@
   letter-spacing: 0;
   line-height: 48px;
   white-space: nowrap;
+}
+
+.registration-page .registert {
+  position: absolute;
+  width: 360px;
+  height: 63px;
+  top: 0;
+  left: 0;
+  background-color: #494949;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .registration-page .overlap {
