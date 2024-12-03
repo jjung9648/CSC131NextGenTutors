@@ -22,1309 +22,998 @@
 }
 
 .session-scheduling {
-  align-items: flex-start;
-  background-color: var(--shady-lady);
+  background-color: #afa7a7;
   display: flex;
-  height: 1024px;
-  overflow: hidden;
-  width: 1440px;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
-.session-scheduling .overlap-group4 {
-  height: 1045px;
-  margin-left: -5px;
+.session-scheduling .overlap-wrapper {
+  background-color: #afa7a7;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.session-scheduling .overlap {
   position: relative;
   width: 1480px;
+  height: 1045px;
+  left: -5px;
 }
 
 .session-scheduling .template {
-  align-items: flex-start;
-  background-color: var(--shady-lady);
-  display: flex;
-  height: 1045px;
-  left: 0;
-  overflow: hidden;
   position: absolute;
-  top: 0;
   width: 1480px;
+  height: 1045px;
+  top: 0;
+  left: 0;
+  background-color: #afa7a7;
+  overflow: hidden;
 }
 
-.session-scheduling .overlap-group2 {
-  height: 1044px;
-  margin-left: -36px;
-  margin-top: -20.0px;
+.session-scheduling .overlap-group {
   position: relative;
   width: 1516px;
+  height: 1044px;
+  top: -20px;
+  left: -36px;
 }
 
-.session-scheduling .rectangle-188 {
-  height: 1024px;
-  left: 41px;
+.session-scheduling .rectangle {
   position: absolute;
-  top: 20px;
   width: 1440px;
+  height: 1024px;
+  top: 20px;
+  left: 41px;
 }
 
-.session-scheduling .dashbored {
-  background-color: var(--lavender-gray);
-  border: 0px none;
+.session-scheduling .group {
+  width: 1516px;
   height: 115px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 1516px;
 }
 
-.session-scheduling .component-7 {
-  align-items: flex-start;
-  display: flex;
-  height: 1024px;
-  left: 36px;
-  min-width: 86px;
+.session-scheduling .dashbored {
+  height: 115px;
+  background-color: #b6b2d4;
+  border: 0px none;
+  border-color: var(--system-colors-miscellaneous-kit-section-stroke);
+}
+
+.session-scheduling .leftbar {
   position: absolute;
+  width: 91px;
+  height: 1024px;
   top: 20px;
+  left: 41px;
 }
 
-.session-scheduling .overlap-group1 {
-  height: 1024px;
-  position: relative;
-  width: 86px;
-}
-
-.session-scheduling .navigation-rail {
-  align-items: center;
-  background-color: var(--white-pointer);
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  height: 1024px;
-  left: 0;
-  padding: 44px 0px 56px;
+.session-scheduling .div {
   position: absolute;
-  top: 0;
-  width: 86px;
-}
-
-.session-scheduling .arrow_back {
-  height: 33px;
-  position: relative;
-  width: 36px;
-}
-
-.session-scheduling .menu-fab {
-  flex: 0 0 auto;
-  gap: 4px;
-  width: 80px;
-}
-
-.session-scheduling .menu {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .container {
-  align-items: center;
-  border-radius: 100px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 10px;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.session-scheduling .state-layer {
-  align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 10px;
-  justify-content: center;
-  padding: 8px;
-  position: relative;
-}
-
-.session-scheduling .icon {
-  height: 24px;
-  position: relative;
-  width: 24px;
-}
-
-.session-scheduling .fab-elevation-override {
-  align-items: flex-start;
-  border-radius: 16px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 10px;
-  overflow: hidden;
-  position: relative;
-}
-
-.session-scheduling .state-layer-7 {
-  align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  justify-content: center;
-  padding: 16px;
-  position: relative;
-}
-
-.session-scheduling .destinations {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  height: 397px;
-  justify-content: center;
-  left: 0;
-  padding: 5px 0px;
-  position: absolute;
-  top: 317px;
-  width: 86px;
-}
-
-.session-scheduling .container-1 {
-  align-items: center;
-  background-color: var(--deluge);
-  border-radius: 100px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.session-scheduling .state-layer-1 {
-  align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  justify-content: center;
-  padding: 4px 16px;
-  position: relative;
-}
-
-.session-scheduling .label {
-  align-self: stretch;
-  color: var(--eerie-black);
-  font-weight: 600;
-  line-height: 16px;
-  position: relative;
-  text-align: center;
-}
-
-.session-scheduling .container-2 {
-  align-items: center;
-  border-radius: 100px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.session-scheduling .label-1 {
-  align-self: stretch;
-  color: var(--gravel);
-  line-height: 16px;
-}
-
-.session-scheduling .pie-chart {
-  cursor: pointer;
-  height: 40px;
-  left: 22px;
-  position: absolute;
-  top: 382px;
-  width: 41px;
-}
-
-.session-scheduling .log-out {
-  height: 39px;
-  left: 23px;
-  position: absolute;
-  top: 663px;
-  width: 38px;
-}
-
-.session-scheduling .inbox {
-  cursor: pointer;
-  height: 36px;
-  left: 25px;
-  position: absolute;
-  top: 520px;
-  width: 35px;
-}
-
-.session-scheduling .schedule {
-  cursor: pointer;
-  height: 38px;
-  left: 25px;
-  position: absolute;
-  top: 451px;
-  width: 37px;
-}
-
-.session-scheduling .home {
-  cursor: pointer;
-  height: 31px;
-  left: 24px;
-  position: absolute;
-  top: 314px;
-  width: 38px;
-}
-
-.session-scheduling .icon-1 {
-  cursor: pointer;
-  height: 38px;
-  left: 26px;
-  position: absolute;
-  top: 587px;
-  width: 34px;
-}
-
-.session-scheduling .arrow_back-1 {
-  cursor: pointer;
-  height: 33px;
-  position: relative;
-  width: 36px;
-}
-
-.session-scheduling .overlap-group {
-  height: 109px;
-  position: relative;
-}
-
-.session-scheduling .menu-fab-1 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  left: 0;
-  position: absolute;
-  top: 1px;
-  width: 80px;
-}
-
-.session-scheduling .fab-elevation-override-1 {
-  background-color: var(--rose-dust);
-  border-radius: 16px;
-  flex: 0 0 auto;
-  position: relative;
-}
-
-.session-scheduling .icon-3 {
-  cursor: pointer;
-  height: 24px;
-  left: 28px;
-  position: absolute;
-  top: 69px;
-  width: 24px;
-}
-
-.session-scheduling .log-out-1 {
-  cursor: pointer;
-  height: 39px;
-  left: 23px;
-  position: absolute;
-  top: 663px;
-  width: 38px;
-}
-
-.session-scheduling .group-15 {
-  align-items: flex-end;
-  display: flex;
-  gap: 48px;
+  width: 1125px;
   height: 654px;
-  left: 168px;
-  min-width: 1125px;
-  position: absolute;
   top: 243px;
+  left: 168px;
 }
 
-.session-scheduling .frame-container {
-  border-radius: 20px;
-  height: 649px;
-  position: relative;
-  width: 260px;
-}
-
-.session-scheduling .frame-24 {
-  align-items: flex-start;
-  background-color: var(--soft-peach);
-  border-radius: 20px;
-  display: flex;
-  height: 649px;
-  left: 0;
-  overflow: hidden;
-  padding: 7px 54.2px;
+.session-scheduling .overlap-2 {
   position: absolute;
-  top: 0;
   width: 260px;
+  height: 649px;
+  top: 5px;
+  left: 0;
+  border-radius: 20px;
 }
 
-.session-scheduling .overlap-group-1 {
-  background-color: var(--alto);
-  background-image: url(../img/pic-3-1.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 150px;
-  margin-left: 2px;
-  width: 150px;
+.session-scheduling .frame {
+  position: absolute;
+  width: 260px;
+  height: 649px;
+  top: 0;
+  left: 0;
+  background-color: #f3edf7;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.session-scheduling .frame-25 {
-  align-items: flex-start;
-  display: flex;
+.session-scheduling .john-doe-math-tutor-wrapper {
+  position: absolute;
+  width: 199px;
   height: 420px;
+  top: 158px;
   left: 31px;
   overflow: hidden;
-  position: absolute;
-  top: 158px;
-  width: 199px;
 }
 
 .session-scheduling .john-doe-math-tutor {
+  position: absolute;
+  width: 200px;
+  top: -1px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
-  margin-top: -1px;
-  min-height: 300px;
-  width: 200px;
 }
 
-.session-scheduling .span1 {
-  color: var(--black);
-  font-family: var(--font-family-inter);
-  font-size: var(--font-size-l);
+.session-scheduling .text-wrapper {
+  font-family: "Inter", Helvetica;
   font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
 }
 
-.session-scheduling .group-14 {
-  align-items: flex-start;
-  display: flex;
-  gap: 59px;
+.session-scheduling .span {
+  font-size: 18px;
+}
+
+.session-scheduling .group-2 {
+  width: 817px;
   height: 654px;
-  margin-bottom: 0;
-  min-width: 817px;
+  left: 308px;
+  position: absolute;
+  top: 0;
 }
 
-.session-scheduling .overlap-group1-1 {
-  align-items: flex-end;
-  align-self: flex-end;
-  background-color: var(--soft-peach);
-  border-radius: 20px;
-  display: flex;
+.session-scheduling .docked-input-date-wrapper {
+  position: absolute;
+  width: 379px;
   height: 649px;
-  justify-content: flex-end;
-  margin-bottom: 0;
-  min-width: 379px;
-}
-
-.session-scheduling .docked-input-date-picker-desktop {
-  align-items: flex-start;
-  background-color: var(--soft-peach);
-  border-radius: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
-  margin-bottom: 0;
-  min-height: 640px;
-  padding: 8px 0;
-  width: 376px;
-}
-
-.session-scheduling .text-field {
-  align-items: flex-start;
-  background-color: var(--shady-lady);
-  border-radius: 4px 4px 0px 0px;
-  display: flex;
-  flex-direction: column;
-  height: 56px;
-  position: relative;
-  width: 312px;
-}
-
-.session-scheduling .text-field-1 {
-  align-items: flex-start;
-  border: 3px solid;
-  border-color: var(--butterfly-bush);
-  border-radius: 4px;
-  display: inline-flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 56px;
-  margin-right: -14.00px;
-  position: relative;
-}
-
-.session-scheduling .state-layer-8 {
-  align-items: flex-start;
-  background-color: var(--soft-peach);
-  border-radius: 4px 4px 0px 0px;
-  display: inline-flex;
-  height: 56px;
-  padding: 4px 0px 4px 30px;
-  position: relative;
-}
-
-.session-scheduling .content {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  height: 48px;
-  justify-content: center;
-  padding: 4px 0px;
-  position: relative;
-  width: 248px;
-}
-
-.session-scheduling .input-text-container {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  position: relative;
-  width: 100%;
-}
-
-.session-scheduling .input-text {
-  color: var(--eerie-black);
-  font-weight: 400;
-  line-height: 24px;
-  margin-top: -1.00px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.session-scheduling .label-text-container {
-  align-items: center;
-  background-color: var(--white-pointer-2);
-  border-radius: 28px;
-  display: inline-flex;
-  left: -4px;
-  padding: 0px 4px;
-  position: absolute;
-  top: -12px;
-}
-
-.session-scheduling .label-text-2 {
-  color: var(--butterfly-bush);
-  font-weight: 400;
-  line-height: 16px;
-  margin-top: -1.00px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.session-scheduling .state-layer-9 {
-  align-items: center;
-  background-color: #49454f1f;
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 10px;
-  justify-content: center;
-  padding: 8px;
-  position: relative;
-}
-
-.session-scheduling .supporting-text {
-  align-items: flex-start;
-  background-color: var(--soft-peach);
-  display: flex;
-  gap: 10px;
-  height: 20px;
+  top: 5px;
   left: 0;
-  padding: 4px 25px 0px;
-  position: absolute;
-  top: 56px;
-  width: 312px;
+  background-color: #f3edf7;
+  border-radius: 20px;
 }
 
-.session-scheduling .supporting-text-1 {
-  color: var(--gravel-2);
-  flex: 1;
-  font-weight: 400;
-  line-height: 16px;
-  margin-top: -1.00px;
+.session-scheduling .docked-input-date {
   position: relative;
+  width: 376px;
+  height: 640px;
+  top: 9px;
+  left: 3px;
+  background-color: #f3edf7;
+  border-radius: 28px;
 }
 
 .session-scheduling .date-picker {
-  align-items: flex-start;
-  background-color: var(--prim);
-  border-radius: 16px;
   display: inline-flex;
   flex-direction: column;
-  margin-left: 0;
-  overflow: hidden;
+  align-items: flex-start;
   padding: 36px 0px;
-  position: relative;
+  position: absolute;
+  top: 91px;
+  left: 0;
+  background-color: #ece6f0;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .session-scheduling .selection-row {
-  align-items: center;
-  align-self: stretch;
   display: flex;
   height: 64px;
+  align-items: center;
   justify-content: space-between;
   padding: 0px 15px;
   position: relative;
+  align-self: stretch;
   width: 100%;
 }
 
-.session-scheduling .x-drop-down {
-  align-items: center;
+.session-scheduling .div-2 {
   display: inline-flex;
-  flex: 0 0 auto;
+  align-items: center;
   justify-content: center;
   position: relative;
+  flex: 0 0 auto;
 }
 
-.session-scheduling .icon-button {
-  align-items: center;
+.session-scheduling .container-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
   width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
 }
 
-.session-scheduling .building-blocks-menu-button {
-  align-items: flex-start;
+.session-scheduling .container {
   display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.session-scheduling .state-layer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.session-scheduling .state-layer-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
 }
 
 .session-scheduling .state-layer-2 {
-  align-items: center;
-  border-radius: 100px;
   display: inline-flex;
-  flex: 0 0 auto;
-  gap: 8px;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
+  gap: 8px;
   padding: 10px 4px 10px 8px;
   position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
 }
 
 .session-scheduling .label-text {
-  color: var(--gravel-2);
-  line-height: 20px;
-  white-space: nowrap;
+  position: relative;
   width: fit-content;
+  font-family: var(--m3-label-large-font-family);
+  font-weight: var(--m3-label-large-font-weight);
+  color: #49454f;
+  font-size: var(--m3-label-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-label-large-letter-spacing);
+  line-height: var(--m3-label-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-label-large-font-style);
 }
 
-.session-scheduling .icon-2 {
-  height: 18px;
+.session-scheduling .img {
   position: relative;
   width: 18px;
-}
-
-.session-scheduling .building-blocks-menu-button-1 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
+  height: 18px;
 }
 
 .session-scheduling .calendar-grid {
-  align-items: flex-end;
   display: inline-flex;
-  flex: 0 0 auto;
   flex-direction: column;
+  align-items: flex-end;
   padding: 0px 12px 4px 25px;
   position: relative;
+  flex: 0 0 auto;
 }
 
 .session-scheduling .days-of-the-week {
-  align-items: flex-start;
-  align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
+  align-self: stretch;
   width: 100%;
+  flex: 0 0 auto;
 }
 
-.session-scheduling .days-of-the-week-item {
-  align-items: center;
-  border-radius: 100px;
+.session-scheduling .date-wrapper {
   display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
   width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 100px;
 }
 
 .session-scheduling .date {
-  color: var(--eerie-black);
-  font-weight: 400;
-  line-height: 24px;
   position: relative;
-  text-align: center;
-  white-space: nowrap;
   width: fit-content;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-body-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
 }
 
 .session-scheduling .week {
+  display: flex;
   align-items: flex-start;
+  position: relative;
   align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  position: relative;
   width: 100%;
+  flex: 0 0 auto;
 }
 
-.session-scheduling .sunday {
-  align-items: center;
+.session-scheduling .div-wrapper {
   display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
   width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
 }
 
-.session-scheduling .container-3 {
+.session-scheduling .container-2 {
   align-items: flex-start;
   display: flex;
-  gap: 10px;
-  height: 40px;
-  position: relative;
   width: 40px;
+  height: 40px;
+  gap: 10px;
+  position: relative;
 }
 
 .session-scheduling .state-layer-3 {
-  align-items: center;
   display: flex;
-  gap: 10px;
+  width: 40px;
   height: 40px;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
   padding: 10px;
   position: relative;
-  width: 40px;
-}
-
-.session-scheduling .date-1 {
-  color: var(--gravel-2);
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: -1.00px;
-  margin-top: -3.00px;
-  opacity: 0.38;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.session-scheduling .monday {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .tuesday {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .wednesday {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .thursday {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .friday {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .saturday {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .container-4 {
-  align-items: center;
-  border-radius: 100px;
-  display: flex;
-  gap: 10px;
-  height: 40px;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-  width: 40px;
-}
-
-.session-scheduling .state-layer-4 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 40px;
-  justify-content: center;
-  position: relative;
-  width: 40px;
-}
-
-.session-scheduling .thursday-3 {
-  flex-direction: column;
-}
-
-.session-scheduling .container-5 {
-  align-items: flex-start;
-  background-color: var(--butterfly-bush);
-  border-radius: 100px;
-  display: flex;
-  gap: 10px;
-  height: 40px;
-  overflow: hidden;
-  position: relative;
-  width: 40px;
 }
 
 .session-scheduling .date-2 {
-  color: var(--white);
-  font-weight: 400;
-  line-height: 24px;
   position: relative;
-  text-align: center;
-  white-space: nowrap;
   width: fit-content;
+  margin-top: -3.00px;
+  margin-bottom: -1.00px;
+  opacity: 0.38;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #49454f;
+  font-size: var(--m3-body-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.session-scheduling .container-3 {
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .state-layer-4 {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .container-4 {
+  align-items: flex-start;
+  background-color: #65558f;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .date-3 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #ffffff;
+  font-size: var(--m3-body-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
 }
 
 .session-scheduling .local-actions {
-  align-items: flex-start;
-  align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 8px 12px;
   position: relative;
-  width: 100%;
-}
-
-.session-scheduling .x-button {
-  align-items: center;
-  border-radius: 100px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 8px;
-  height: 40px;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.session-scheduling .state-layer-5 {
-  align-items: center;
   align-self: stretch;
-  display: flex;
-  flex: 1;
-  flex-grow: 1;
-  gap: 8px;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .state-layer-wrapper-2 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 40px;
+  align-items: center;
   justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.session-scheduling .label-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   padding: 10px 12px;
   position: relative;
+  flex: 1;
+  align-self: stretch;
   width: 100%;
+  flex-grow: 1;
 }
 
-.session-scheduling .label-text-1 {
-  color: var(--butterfly-bush);
-  font-weight: 500;
-  line-height: 20px;
-  margin-top: -1.00px;
+.session-scheduling .label-text-2 {
   position: relative;
-  text-align: center;
-  white-space: nowrap;
   width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--m3-label-large-font-family);
+  font-weight: var(--m3-label-large-font-weight);
+  color: #65558f;
+  font-size: var(--m3-label-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-label-large-letter-spacing);
+  line-height: var(--m3-label-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-label-large-font-style);
 }
 
 .session-scheduling .button-container {
-  align-items: flex-end;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 8px;
+  position: relative;
   flex: 1;
   flex-grow: 1;
+}
+
+.session-scheduling .secondary-button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
   gap: 8px;
-  justify-content: flex-end;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.session-scheduling .text-field {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+  height: 56px;
+  align-items: flex-start;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background-color: #afa7a7;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.session-scheduling .text-field-2 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 56px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  margin-right: -14.00px;
+  border-radius: 4px;
+  border: 3px solid;
+  border-color: #65558f;
+}
+
+.session-scheduling .state-layer-5 {
+  display: inline-flex;
+  height: 56px;
+  align-items: flex-start;
+  padding: 4px 0px 4px 30px;
+  position: relative;
+  background-color: #f3edf7;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.session-scheduling .content {
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+  height: 48px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4px 0px;
   position: relative;
 }
 
-.session-scheduling .frame-19 {
-  background-color: var(--soft-peach);
-  border-radius: 20px;
-  height: 649px;
-  width: 379px;
+.session-scheduling .input-text-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
 }
 
-.session-scheduling .frame-20 {
-  align-items: flex-end;
-  background-color: var(--bon-jour);
-  border-radius: 20px;
-  display: flex;
-  height: 619px;
-  left: 930px;
-  overflow: hidden;
-  padding: 96px 109px;
+.session-scheduling .input-text {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.session-scheduling .label-text-container {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 4px;
   position: absolute;
-  top: 261px;
+  top: -12px;
+  left: -4px;
+  background-color: #fef7ff;
+  border-radius: 28px;
+}
+
+.session-scheduling .label-text-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--m3-body-small-font-family);
+  font-weight: var(--m3-body-small-font-weight);
+  color: #65558f;
+  font-size: var(--m3-body-small-font-size);
+  letter-spacing: var(--m3-body-small-letter-spacing);
+  line-height: var(--m3-body-small-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-small-font-style);
+}
+
+.session-scheduling .icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #49454f1f;
+}
+
+.session-scheduling .supporting-text {
+  display: flex;
+  width: 312px;
+  height: 20px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 4px 25px 0px;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  background-color: #f3edf7;
+}
+
+.session-scheduling .supporting-text-2 {
+  position: relative;
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: var(--m3-body-small-font-family);
+  font-weight: var(--m3-body-small-font-weight);
+  color: #49454f;
+  font-size: var(--m3-body-small-font-size);
+  letter-spacing: var(--m3-body-small-letter-spacing);
+  line-height: var(--m3-body-small-line-height);
+  font-style: var(--m3-body-small-font-style);
+}
+
+.session-scheduling .frame-2 {
+  position: absolute;
+  width: 379px;
+  height: 649px;
+  top: 0;
+  left: 438px;
+  background-color: #f3edf7;
+  border-radius: 20px;
+}
+
+.session-scheduling .time-wrapper {
+  position: absolute;
   width: 345px;
+  height: 619px;
+  top: 261px;
+  left: 930px;
+  background-color: #e6e0e9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+input[type=submit] {
+  position: absolute;
+  width: 250px;
+  height: 52px;
+  top: 791px;
+  left: 975px;
+  background-color: #ffd8e4;
+  border-color: #e6e2e7;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+input[type=text] {
+  position: absolute;
+  width: 170px;
+  height: 22px;
+  top: 731px;
+  left: 1020px;
+  background-color: #ffd8e4;
+  border-color: #e6e2e7;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .session-scheduling .button {
-  align-items: center;
-  background-color: var(--white);
-  border: 1px solid;
-  border-color: var(--sonic-silver);
-  border-radius: 8px;
+  all: unset;
+  box-sizing: border-box;
   display: flex;
-  gap: 8px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 8px;
-  position: relative;
   width: 127px;
-}
-
-.session-scheduling .button-1 {
-  color: var(--eerie-black-2);
-  font-weight: 400;
-  line-height: 16px;
-  margin-top: -1.00px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-space-200);
+  padding: var(--size-space-200);
   position: relative;
-  text-align: center;
-  width: fit-content;
+  top: 475px;
+  left: 109px;
+  background-color: var(--collection-1-color);
+  border-radius: var(--size-radius-200);
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--color-border-neutral-secondary);
 }
 
-.session-scheduling .rectangle-178 {
-  height: 100px;
-  left: 270px;
+.session-scheduling .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--single-line-body-base-font-family);
+  font-weight: var(--single-line-body-base-font-weight);
+  color: var(--color-text-default-default);
+  font-size: var(--single-line-body-base-font-size);
+  text-align: center;
+  letter-spacing: var(--single-line-body-base-letter-spacing);
+  line-height: var(--single-line-body-base-line-height);
+  font-style: var(--single-line-body-base-font-style);
+}
+
+.session-scheduling .rectangle-2 {
   position: absolute;
-  top: 68px;
   width: 915px;
+  height: 100px;
+  top: 68px;
+  left: 270px;
 }
 
 .session-scheduling .book-appointment {
-  color: var(--black);
-  font-family: var(--font-family-inter);
-  font-size: 30px;
-  font-weight: 400;
+  position: absolute;
+  width: 915px;
+  top: 70px;
   left: 270px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 70px;
-  width: 915px;
 }
 
+/*
 .session-scheduling .input {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  width: 216px;
   height: 163px;
+  align-items: center;
   justify-content: center;
-  left: 986px;
+  gap: 16px;
   padding: 72px 0px 50px;
   position: absolute;
   top: 282px;
-  width: 216px;
+  left: 986px;
 }
 
+
 .session-scheduling .time-picker-inputs {
-  align-items: flex-start;
   display: inline-flex;
+  align-items: flex-start;
+  position: relative;
   flex: 0 0 auto;
   margin-top: -46.50px;
-  position: relative;
 }
 
 .session-scheduling .hour-input {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  justify-content: center;
-  position: relative;
   width: 96px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+}
+*/
+
+.time-start {
+  position: absolute;
+  width: 150px;
+  height: 32px;
+  top: 361px;
+  left: 1010px;
+  border: none;
+  background-color: #ffd8e4;
+  border-radius: 20px;
+  z-index: 1;
+  font-size: 14px;
+  font-family: var(--m3-display-large-font-family);
+  font-weight: var(--m3-display-large-font-weight);
+  width: 180px;
+}
+
+.time-end {
+  position: absolute;
+  width: 150px;
+  height: 32px;
+  top: 461px;
+  left: 1010px;
+  border: none;
+  background-color: #ffd8e4;
+  border-radius: 20px;
+  z-index: 1;
+  font-size: 14px;
+  font-family: var(--m3-display-large-font-family);
+  font-weight: var(--m3-display-large-font-weight);
+  width: 180px;
 }
 
 .session-scheduling .selected {
-  align-items: center;
-  align-self: stretch;
-  background-color: var(--blue-chalk);
-  border-radius: 8px;
   display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
+  align-items: center;
   gap: 7px;
-  overflow: hidden;
   position: relative;
+  align-self: stretch;
   width: 100%;
+  flex: 0 0 auto;
+  background-color: #eaddff;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .session-scheduling .time-text {
-  color: var(--gigas);
-  font-weight: 400;
-  height: 80px;
-  line-height: 64px;
-  margin-top: -1.00px;
   position: relative;
-  text-align: center;
   width: 96px;
+  height: 80px;
+  margin-top: -1.00px;
+  font-family: var(--m3-display-large-font-family);
+  font-weight: var(--m3-display-large-font-weight);
+  color: #4f378a;
+  font-size: var(--m3-display-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-display-large-letter-spacing);
+  line-height: var(--m3-display-large-line-height);
+  font-style: var(--m3-display-large-font-style);
 }
 
 .session-scheduling .separator {
-  color: var(--eerie-black);
-  font-family: var(--font-family-roboto);
-  font-size: var(--font-size-57px);
-  font-weight: 400;
+  position: relative;
+  width: 24px;
   height: 80px;
+  margin-top: -1.00px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #1d1b20;
+  font-size: 57px;
+  text-align: center;
   letter-spacing: 0;
   line-height: 64px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  width: 24px;
 }
 
 .session-scheduling .minute-input {
-  align-items: center;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
   width: 96px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .session-scheduling .default {
-  align-items: center;
-  align-self: stretch;
-  background-color: var(--bon-jour);
   display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
+  gap: 10px;
   position: relative;
+  align-self: stretch;
   width: 100%;
+  flex: 0 0 auto;
+  background-color: #e6e0e9;
+  overflow: hidden;
 }
 
-.session-scheduling .time-text-1 {
-  color: var(--eerie-black);
-  font-weight: 400;
+.session-scheduling .time-text-2 {
+  position: relative;
+  width: 97px;
   height: 80px;
-  line-height: 64px;
+  margin-top: -1.00px;
   margin-left: -0.50px;
   margin-right: -0.50px;
-  margin-top: -1.00px;
-  position: relative;
+  font-family: var(--m3-display-large-font-family);
+  font-weight: var(--m3-display-large-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-display-large-font-size);
   text-align: center;
-  width: 97px;
+  letter-spacing: var(--m3-display-large-letter-spacing);
+  line-height: var(--m3-display-large-line-height);
+  font-style: var(--m3-display-large-font-style);
 }
 
 .session-scheduling .period-selector {
-  align-items: flex-start;
-  background-color: var(--prim);
-  border: 1px solid;
-  border-color: var(--boulder);
-  border-radius: 8px;
   display: flex;
-  height: 38px;
-  margin-bottom: -46.50px;
-  overflow: hidden;
-  position: relative;
   width: 216px;
+  height: 38px;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: -46.50px;
+  background-color: #ece6f0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #79747e;
 }
 
-.session-scheduling .am {
-  align-items: flex-start;
-  background-color: #ffd8e4;
-  border-color: var(--boulder);
-  border-right-style: solid;
-  border-right-width: 1px;
+.session-scheduling .AM {
   display: inline-flex;
-  flex: 0 0 auto;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -1.00px;
   margin-bottom: -1.00px;
   margin-left: -1.00px;
-  margin-top: -1.00px;
-  position: relative;
+  background-color: #ffd8e4;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-color: #79747e;
 }
 
 .session-scheduling .state-layer-6 {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 38px;
-  justify-content: center;
-  position: relative;
   width: 108px;
-}
-
-.session-scheduling .am-1 {
-  color: #633b48;
-  font-weight: 500;
-  line-height: 24px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.session-scheduling .pm {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   position: relative;
 }
 
-.session-scheduling .pm-1 {
-  color: var(--gravel-2);
-  font-weight: 500;
-  line-height: 24px;
+.session-scheduling .text-wrapper-2 {
   position: relative;
-  text-align: center;
-  white-space: nowrap;
   width: fit-content;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #633b48;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  white-space: nowrap;
 }
 
-.session-scheduling .input-1 {
-  align-items: center;
+.session-scheduling .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #49454f;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.session-scheduling .input-2 {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  width: 216px;
   height: 151px;
+  align-items: center;
   justify-content: center;
-  left: 986px;
+  gap: 16px;
   padding: 72px 0px 50px;
   position: absolute;
   top: 436px;
-  width: 216px;
+  left: 986px;
 }
 
-.session-scheduling .time-picker-inputs-1 {
-  align-items: flex-start;
+.session-scheduling .time-picker-inputs-2 {
   display: inline-flex;
+  align-items: flex-start;
+  position: relative;
   flex: 0 0 auto;
   margin-top: -52.50px;
-  position: relative;
 }
 
-.session-scheduling .period-selector-1 {
-  align-items: flex-start;
-  background-color: var(--prim);
-  border: 1px solid;
-  border-color: var(--boulder);
-  border-radius: 8px;
+.session-scheduling .period-selector-2 {
   display: flex;
-  height: 38px;
-  margin-bottom: -52.50px;
-  overflow: hidden;
-  position: relative;
   width: 216px;
-}
-
-.session-scheduling .am-2 {
+  height: 38px;
   align-items: flex-start;
-  background-color: #ffd8e4;
-  border-color: var(--boulder);
-  border-right-style: solid;
-  border-right-width: 1px;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: -1.00px;
-  margin-left: -1.00px;
-  margin-top: -1.00px;
   position: relative;
-}
-
-.session-scheduling .am-3 {
-  color: #633b48;
-  font-weight: 500;
-  line-height: 24px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.session-scheduling .pm-2 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 10px;
-  position: relative;
-}
-
-.session-scheduling .pm-3 {
-  color: var(--gravel-2);
-  font-weight: 500;
-  line-height: 24px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
+  margin-bottom: -52.50px;
+  background-color: #ece6f0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #79747e;
 }
 
 .session-scheduling .logo {
-  height: 67px;
-  left: 107px;
   position: absolute;
-  top: 16px;
   width: 65px;
-}
-
-.session-scheduling .friday-6 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .icon-button-4 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .label-2 {
-  font-weight: 500;
-  position: relative;
-  text-align: center;
-}
-
-.session-scheduling .menu-2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.session-scheduling .monday-6 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .saturday-6 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .sunday-6 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .thursday-6 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .tuesday-6 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
-}
-
-.session-scheduling .wednesday-6 {
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  height: 48px;
-  justify-content: center;
-  position: relative;
-  width: 48px;
+  height: 67px;
+  top: 16px;
+  left: 107px;
 }
