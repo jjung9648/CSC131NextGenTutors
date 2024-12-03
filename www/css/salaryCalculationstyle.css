@@ -1,0 +1,558 @@
+.salary-calculation {
+  background-color: #afa7a7fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.salary-calculation .overlap-wrapper {
+  background-color: #afa7a7fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.salary-calculation .overlap {
+  position: relative;
+  width: 1442px;
+  height: 1024px;
+}
+
+.salary-calculation .rectangle {
+  position: absolute;
+  width: 1428px;
+  height: 909px;
+  top: 115px;
+  left: 12px;
+}
+
+.salary-calculation .group {
+  position: absolute;
+  width: 1440px;
+  height: 115px;
+  top: 0;
+  left: 2px;
+}
+
+.salary-calculation .overlap-group {
+  position: relative;
+  height: 115px;
+}
+
+.salary-calculation .dashbored {
+  position: absolute;
+  width: 1440px;
+  height: 115px;
+  top: 0;
+  left: 0;
+  background-color: #b6b2d4;
+  border: 0px none;
+  border-color: var(--system-colors-miscellaneous-kit-section-stroke);
+}
+
+.salary-calculation .overlap-group-wrapper {
+  position: absolute;
+  width: 1180px;
+  height: 75px;
+  top: 20px;
+  left: 190px;
+}
+
+.salary-calculation .div {
+  position: relative;
+  height: 75px;
+}
+
+.salary-calculation .bottom-app-bar-wrapper {
+  position: absolute;
+  width: 1180px;
+  height: 75px;
+  top: 0;
+  left: 0;
+}
+
+.salary-calculation .bottom-app-bar {
+  display: flex;
+  width: 1180px;
+  height: 75px;
+  align-items: center;
+  gap: 276px;
+  padding: 0px 16px 0px 4px;
+  position: relative;
+  background-color: #f2ecf4;
+  border-radius: 20px;
+}
+
+.salary-calculation .leading-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.salary-calculation .icon {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.salary-calculation .container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.salary-calculation .state-layer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.salary-calculation .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.salary-calculation .avater-icon {
+  position: absolute;
+  width: 46px;
+  height: 38px;
+  top: 18px;
+  left: 1117px;
+  background-image: url(https://c.animaapp.com/JUuCbog4/img/generic-avatar@2x.png);
+  background-size: 100% 100%;
+}
+
+.salary-calculation .logo {
+  position: absolute;
+  width: 65px;
+  height: 67px;
+  top: 22px;
+  left: 98px;
+}
+
+.salary-calculation .frame {
+  position: absolute;
+  width: 661px;
+  height: 150px;
+  top: 185px;
+  left: 665px;
+  background-color: var(--m3-schemes-surface-container-high);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.salary-calculation .frame-2 {
+  position: relative;
+  width: 387px;
+  height: 90px;
+  top: 27px;
+  left: 19px;
+  overflow: hidden;
+}
+
+.salary-calculation .overlap-group-2 {
+  width: 532px;
+  top: 39px;
+  left: 5px;
+  position: absolute;
+  height: 32px;
+}
+
+.salary-calculation .headline {
+  position: absolute;
+  width: 350px;
+  top: 0;
+  left: 0;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.salary-calculation .text-wrapper {
+  position: absolute;
+  width: 476px;
+  top: 0;
+  left: 56px;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.salary-calculation .p {
+  width: 476px;
+  top: -3px;
+  left: 5px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.salary-calculation .frame-3 {
+  position: absolute;
+  width: 665px;
+  height: 464px;
+  top: 406px;
+  left: 661px;
+  background-color: var(--m3-schemes-surface-container-high);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.salary-calculation .overlap-2 {
+  position: absolute;
+  width: 621px;
+  height: 370px;
+  top: 47px;
+  left: 22px;
+}
+
+.salary-calculation .frame-4 {
+  position: absolute;
+  width: 484px;
+  height: 370px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.salary-calculation .headline-2 {
+  width: 610px;
+  top: 2px;
+  left: 6px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.salary-calculation .headline-3 {
+  width: 68px;
+  top: 290px;
+  left: 6px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.salary-calculation .overlap-group-3 {
+  width: 118px;
+  top: 290px;
+  left: 283px;
+  position: absolute;
+  height: 32px;
+}
+
+.salary-calculation .headline-4 {
+  width: 68px;
+  top: 0;
+  left: 0;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.salary-calculation .headline-5 {
+  width: 67px;
+  top: 0;
+  left: 51px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.salary-calculation .headline-6 {
+  width: 168px;
+  height: 24px;
+  top: 58px;
+  left: 6px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .headline-7 {
+  width: 19px;
+  height: 24px;
+  top: 58px;
+  left: 308px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .overlap-3 {
+  position: absolute;
+  width: 375px;
+  height: 24px;
+  top: 154px;
+  left: 6px;
+}
+
+.salary-calculation .headline-8 {
+  width: 19px;
+  height: 24px;
+  top: 0;
+  left: 293px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .headline-9 {
+  width: 375px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .headline-10 {
+  width: 19px;
+  height: 24px;
+  top: 106px;
+  left: 299px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .headline-11 {
+  width: 19px;
+  height: 24px;
+  top: 106px;
+  left: 392px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .headline-12 {
+  width: 94px;
+  height: 24px;
+  top: 58px;
+  left: 334px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .headline-13 {
+  width: 19px;
+  height: 24px;
+  top: 154px;
+  left: 392px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .headline-14 {
+  width: 155px;
+  height: 24px;
+  top: 106px;
+  left: 6px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.salary-calculation .line {
+  width: 1px;
+  height: 282px;
+  top: 42px;
+  left: 256px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.salary-calculation .line-2 {
+  width: 621px;
+  height: 1px;
+  top: 291px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.salary-calculation .line-3 {
+  width: 621px;
+  height: 1px;
+  top: 323px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.salary-calculation .line-4 {
+  width: 621px;
+  height: 1px;
+  top: 40px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.salary-calculation .text-wrapper-2 {
+  position: absolute;
+  width: 166px;
+  height: 15px;
+  top: 11px;
+  left: 487px;
+  font-family: var(--m3-body-medium-font-family);
+  font-weight: var(--m3-body-medium-font-weight);
+  color: #000000;
+  font-size: var(--m3-body-medium-font-size);
+  letter-spacing: var(--m3-body-medium-letter-spacing);
+  line-height: var(--m3-body-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-medium-font-style);
+}
+
+.salary-calculation .salary-calculation-wrapper {
+  position: absolute;
+  width: 503px;
+  height: 685px;
+  top: 185px;
+  left: 120px;
+  background-color: var(--m3-schemes-surface-container-high);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.salary-calculation .div-2 {
+  position: absolute;
+  width: 463px;
+  top: 28px;
+  left: 20px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.salary-calculation .span {
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.salary-calculation .text-wrapper-3 {
+  font-size: 36px;
+}
+
+.salary-calculation .text-wrapper-4 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.salary-calculation .leftbar {
+  position: absolute;
+  width: 96px;
+  height: 1024px;
+  top: 0;
+  left: 0;
+}

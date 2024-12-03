@@ -1,0 +1,947 @@
+.session-scheduling {
+  background-color: #afa7a7;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.session-scheduling .overlap-wrapper {
+  background-color: #afa7a7;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.session-scheduling .overlap {
+  position: relative;
+  width: 1480px;
+  height: 1045px;
+  left: -5px;
+}
+
+.session-scheduling .template {
+  position: absolute;
+  width: 1480px;
+  height: 1045px;
+  top: 0;
+  left: 0;
+  background-color: #afa7a7;
+  overflow: hidden;
+}
+
+.session-scheduling .overlap-group {
+  position: relative;
+  width: 1516px;
+  height: 1044px;
+  top: -20px;
+  left: -36px;
+}
+
+.session-scheduling .rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  top: 20px;
+  left: 41px;
+}
+
+.session-scheduling .group {
+  width: 1516px;
+  height: 115px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.session-scheduling .dashbored {
+  height: 115px;
+  background-color: #b6b2d4;
+  border: 0px none;
+  border-color: var(--system-colors-miscellaneous-kit-section-stroke);
+}
+
+.session-scheduling .leftbar {
+  position: absolute;
+  width: 91px;
+  height: 1024px;
+  top: 20px;
+  left: 41px;
+}
+
+.session-scheduling .div {
+  position: absolute;
+  width: 1125px;
+  height: 654px;
+  top: 243px;
+  left: 168px;
+}
+
+.session-scheduling .overlap-2 {
+  position: absolute;
+  width: 260px;
+  height: 649px;
+  top: 5px;
+  left: 0;
+  border-radius: 20px;
+}
+
+.session-scheduling .frame {
+  position: absolute;
+  width: 260px;
+  height: 649px;
+  top: 0;
+  left: 0;
+  background-color: #f3edf7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.session-scheduling .overlap-group-2 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: 7px;
+  left: 56px;
+  background-color: #d9d9d9;
+  background-image: url(https://c.animaapp.com/5JSizdhu/img/pic-3-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.session-scheduling .john-doe-math-tutor-wrapper {
+  position: absolute;
+  width: 199px;
+  height: 420px;
+  top: 158px;
+  left: 31px;
+  overflow: hidden;
+}
+
+.session-scheduling .john-doe-math-tutor {
+  position: absolute;
+  width: 200px;
+  top: -1px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.session-scheduling .text-wrapper {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.session-scheduling .span {
+  font-size: 18px;
+}
+
+.session-scheduling .group-2 {
+  width: 817px;
+  height: 654px;
+  left: 308px;
+  position: absolute;
+  top: 0;
+}
+
+.session-scheduling .docked-input-date-wrapper {
+  position: absolute;
+  width: 379px;
+  height: 649px;
+  top: 5px;
+  left: 0;
+  background-color: #f3edf7;
+  border-radius: 20px;
+}
+
+.session-scheduling .docked-input-date {
+  position: relative;
+  width: 376px;
+  height: 640px;
+  top: 9px;
+  left: 3px;
+  background-color: #f3edf7;
+  border-radius: 28px;
+}
+
+.session-scheduling .date-picker {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 36px 0px;
+  position: absolute;
+  top: 91px;
+  left: 0;
+  background-color: #ece6f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.session-scheduling .selection-row {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.session-scheduling .div-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .container-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.session-scheduling .state-layer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.session-scheduling .state-layer-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .state-layer-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 4px 10px 8px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.session-scheduling .label-text {
+  position: relative;
+  width: fit-content;
+  font-family: var(--m3-label-large-font-family);
+  font-weight: var(--m3-label-large-font-weight);
+  color: #49454f;
+  font-size: var(--m3-label-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-label-large-letter-spacing);
+  line-height: var(--m3-label-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-label-large-font-style);
+}
+
+.session-scheduling .img {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.session-scheduling .calendar-grid {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 12px 4px 25px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .days-of-the-week {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .date-wrapper {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 100px;
+}
+
+.session-scheduling .date {
+  position: relative;
+  width: fit-content;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-body-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.session-scheduling .week {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .div-wrapper {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .container-2 {
+  align-items: flex-start;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .state-layer-3 {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.session-scheduling .date-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -3.00px;
+  margin-bottom: -1.00px;
+  opacity: 0.38;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #49454f;
+  font-size: var(--m3-body-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.session-scheduling .container-3 {
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .state-layer-4 {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .container-4 {
+  align-items: flex-start;
+  background-color: #65558f;
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .date-3 {
+  position: relative;
+  width: fit-content;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #ffffff;
+  font-size: var(--m3-body-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.session-scheduling .local-actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px 12px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .state-layer-wrapper-2 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.session-scheduling .label-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.session-scheduling .label-text-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--m3-label-large-font-family);
+  font-weight: var(--m3-label-large-font-weight);
+  color: #65558f;
+  font-size: var(--m3-label-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-label-large-letter-spacing);
+  line-height: var(--m3-label-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-label-large-font-style);
+}
+
+.session-scheduling .button-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.session-scheduling .secondary-button {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.session-scheduling .text-field {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+  height: 56px;
+  align-items: flex-start;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background-color: #afa7a7;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.session-scheduling .text-field-2 {
+  display: inline-flex;
+  flex-direction: column;
+  height: 56px;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  margin-right: -14.00px;
+  border-radius: 4px;
+  border: 3px solid;
+  border-color: #65558f;
+}
+
+.session-scheduling .state-layer-5 {
+  display: inline-flex;
+  height: 56px;
+  align-items: flex-start;
+  padding: 4px 0px 4px 30px;
+  position: relative;
+  background-color: #f3edf7;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.session-scheduling .content {
+  display: flex;
+  flex-direction: column;
+  width: 248px;
+  height: 48px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4px 0px;
+  position: relative;
+}
+
+.session-scheduling .input-text-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.session-scheduling .input-text {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.session-scheduling .label-text-container {
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 4px;
+  position: absolute;
+  top: -12px;
+  left: -4px;
+  background-color: #fef7ff;
+  border-radius: 28px;
+}
+
+.session-scheduling .label-text-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--m3-body-small-font-family);
+  font-weight: var(--m3-body-small-font-weight);
+  color: #65558f;
+  font-size: var(--m3-body-small-font-size);
+  letter-spacing: var(--m3-body-small-letter-spacing);
+  line-height: var(--m3-body-small-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-small-font-style);
+}
+
+.session-scheduling .icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #49454f1f;
+}
+
+.session-scheduling .supporting-text {
+  display: flex;
+  width: 312px;
+  height: 20px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 4px 25px 0px;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  background-color: #f3edf7;
+}
+
+.session-scheduling .supporting-text-2 {
+  position: relative;
+  flex: 1;
+  margin-top: -1.00px;
+  font-family: var(--m3-body-small-font-family);
+  font-weight: var(--m3-body-small-font-weight);
+  color: #49454f;
+  font-size: var(--m3-body-small-font-size);
+  letter-spacing: var(--m3-body-small-letter-spacing);
+  line-height: var(--m3-body-small-line-height);
+  font-style: var(--m3-body-small-font-style);
+}
+
+.session-scheduling .frame-2 {
+  position: absolute;
+  width: 379px;
+  height: 649px;
+  top: 0;
+  left: 438px;
+  background-color: #f3edf7;
+  border-radius: 20px;
+}
+
+.session-scheduling .button-wrapper {
+  position: absolute;
+  width: 345px;
+  height: 619px;
+  top: 261px;
+  left: 930px;
+  background-color: #e6e0e9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.session-scheduling .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 127px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-space-200);
+  padding: var(--size-space-200);
+  position: relative;
+  top: 475px;
+  left: 109px;
+  background-color: var(--collection-1-color);
+  border-radius: var(--size-radius-200);
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--color-border-neutral-secondary);
+}
+
+.session-scheduling .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--single-line-body-base-font-family);
+  font-weight: var(--single-line-body-base-font-weight);
+  color: var(--color-text-default-default);
+  font-size: var(--single-line-body-base-font-size);
+  text-align: center;
+  letter-spacing: var(--single-line-body-base-letter-spacing);
+  line-height: var(--single-line-body-base-line-height);
+  font-style: var(--single-line-body-base-font-style);
+}
+
+.session-scheduling .rectangle-2 {
+  position: absolute;
+  width: 915px;
+  height: 100px;
+  top: 68px;
+  left: 270px;
+}
+
+.session-scheduling .book-appointment {
+  position: absolute;
+  width: 915px;
+  top: 70px;
+  left: 270px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.session-scheduling .input {
+  display: flex;
+  flex-direction: column;
+  width: 216px;
+  height: 163px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 72px 0px 50px;
+  position: absolute;
+  top: 282px;
+  left: 986px;
+}
+
+.session-scheduling .time-picker-inputs {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -46.50px;
+}
+
+.session-scheduling .hour-input {
+  display: flex;
+  flex-direction: column;
+  width: 96px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+}
+
+.session-scheduling .selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #eaddff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.session-scheduling .time-text {
+  position: relative;
+  width: 96px;
+  height: 80px;
+  margin-top: -1.00px;
+  font-family: var(--m3-display-large-font-family);
+  font-weight: var(--m3-display-large-font-weight);
+  color: #4f378a;
+  font-size: var(--m3-display-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-display-large-letter-spacing);
+  line-height: var(--m3-display-large-line-height);
+  font-style: var(--m3-display-large-font-style);
+}
+
+.session-scheduling .separator {
+  position: relative;
+  width: 24px;
+  height: 80px;
+  margin-top: -1.00px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #1d1b20;
+  font-size: 57px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.session-scheduling .minute-input {
+  display: flex;
+  flex-direction: column;
+  width: 96px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.session-scheduling .default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #e6e0e9;
+  overflow: hidden;
+}
+
+.session-scheduling .time-text-2 {
+  position: relative;
+  width: 97px;
+  height: 80px;
+  margin-top: -1.00px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  font-family: var(--m3-display-large-font-family);
+  font-weight: var(--m3-display-large-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-display-large-font-size);
+  text-align: center;
+  letter-spacing: var(--m3-display-large-letter-spacing);
+  line-height: var(--m3-display-large-line-height);
+  font-style: var(--m3-display-large-font-style);
+}
+
+.session-scheduling .period-selector {
+  display: flex;
+  width: 216px;
+  height: 38px;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: -46.50px;
+  background-color: #ece6f0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #79747e;
+}
+
+.session-scheduling .AM {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -1.00px;
+  margin-bottom: -1.00px;
+  margin-left: -1.00px;
+  background-color: #ffd8e4;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-color: #79747e;
+}
+
+.session-scheduling .state-layer-6 {
+  display: flex;
+  flex-direction: column;
+  width: 108px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.session-scheduling .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #633b48;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.session-scheduling .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: #49454f;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.session-scheduling .input-2 {
+  display: flex;
+  flex-direction: column;
+  width: 216px;
+  height: 151px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 72px 0px 50px;
+  position: absolute;
+  top: 436px;
+  left: 986px;
+}
+
+.session-scheduling .time-picker-inputs-2 {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+  margin-top: -52.50px;
+}
+
+.session-scheduling .period-selector-2 {
+  display: flex;
+  width: 216px;
+  height: 38px;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: -52.50px;
+  background-color: #ece6f0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #79747e;
+}
+
+.session-scheduling .logo {
+  position: absolute;
+  width: 65px;
+  height: 67px;
+  top: 16px;
+  left: 107px;
+}

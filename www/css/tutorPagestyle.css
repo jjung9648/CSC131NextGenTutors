@@ -1,0 +1,338 @@
+.tutor-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tutor-page .overlap-wrapper {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.tutor-page .overlap {
+  position: relative;
+  height: 1022px;
+}
+
+.tutor-page .text-wrapper {
+  position: absolute;
+  top: 583px;
+  left: 1222px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.50px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.tutor-page .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 1022px;
+  top: 0;
+  left: 0;
+}
+
+.tutor-page .dashbored {
+  position: absolute;
+  width: 1440px;
+  height: 93px;
+  top: 0;
+  left: 0;
+  background-color: #b6b2d4;
+  border: 0px none;
+  border-color: var(--system-colors-miscellaneous-kit-section-stroke);
+}
+
+.tutor-page .rectangle {
+  position: absolute;
+  width: 915px;
+  height: 100px;
+  top: 36px;
+  left: 265px;
+}
+
+.tutor-page .logo {
+  position: absolute;
+  width: 65px;
+  height: 67px;
+  top: 19px;
+  left: 123px;
+}
+
+.tutor-page .leftbar {
+  position: absolute;
+  width: 96px;
+  height: 1022px;
+  top: 0;
+  left: 0;
+}
+
+.tutor-page .our-tutors {
+  position: absolute;
+  width: 1298px;
+  top: 44px;
+  left: 71px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tutor-page .navigate-next {
+  position: absolute;
+  width: 147px;
+  height: 96px;
+  top: 480px;
+  left: 1203px;
+}
+
+.tutor-page .frame {
+  position: absolute;
+  width: 301px;
+  height: 649px;
+  top: 256px;
+  left: 136px;
+  background-color: #f3edf7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tutor-page .div {
+  position: absolute;
+  width: 230px;
+  height: 556px;
+  top: 19px;
+  left: 43px;
+}
+
+.tutor-page .rectangle-2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 32px;
+  background-color: #d9d9d9;
+}
+
+.tutor-page .pic {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 32px;
+  object-fit: cover;
+}
+
+.tutor-page .john-doe-math-tutor-wrapper {
+  position: absolute;
+  width: 230px;
+  height: 420px;
+  top: 136px;
+  left: 0;
+}
+
+.tutor-page .p {
+  position: absolute;
+  width: 200px;
+  top: -1px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.tutor-page .span {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.tutor-page .text-wrapper-2 {
+  font-size: 18px;
+}
+
+.tutor-page .button {
+  all: unset;
+  box-sizing: border-box;
+  top: 575px;
+  left: 87px;
+  display: flex;
+  width: 127px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-space-200);
+  padding: var(--size-space-200);
+  position: absolute;
+  background-color: var(--collection-1-color);
+  border-radius: var(--size-radius-200);
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--color-border-neutral-secondary);
+}
+
+.tutor-page .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--single-line-body-base-font-family);
+  font-weight: var(--single-line-body-base-font-weight);
+  color: var(--color-text-default-default);
+  font-size: var(--single-line-body-base-font-size);
+  text-align: center;
+  letter-spacing: var(--single-line-body-base-letter-spacing);
+  line-height: var(--single-line-body-base-line-height);
+  font-style: var(--single-line-body-base-font-style);
+}
+
+.tutor-page .frame-2 {
+  position: absolute;
+  width: 301px;
+  height: 649px;
+  top: 256px;
+  left: 467px;
+  background-color: #f3edf7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tutor-page .overlap-2 {
+  position: absolute;
+  width: 230px;
+  height: 558px;
+  top: 7px;
+  left: 35px;
+}
+
+.tutor-page .rectangle-3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 25px;
+  left: 42px;
+  background-color: #d9d9d9;
+}
+
+.tutor-page .img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 40px;
+  object-fit: cover;
+}
+
+.tutor-page .jane-doe-english-wrapper {
+  position: absolute;
+  width: 230px;
+  height: 420px;
+  top: 138px;
+  left: 0;
+}
+
+.tutor-page .button-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  top: 578px;
+  left: 87px;
+  display: flex;
+  width: 127px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-space-200);
+  padding: var(--size-space-200);
+  position: absolute;
+  background-color: var(--collection-1-color);
+  border-radius: var(--size-radius-200);
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--color-border-neutral-secondary);
+}
+
+.tutor-page .frame-3 {
+  position: absolute;
+  width: 301px;
+  height: 649px;
+  top: 259px;
+  left: 798px;
+  background-color: #f3edf7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tutor-page .overlap-3 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 13px;
+  left: 75px;
+  background-color: #d9d9d9;
+  background-image: url(https://c.animaapp.com/sSYLp88C/img/pic-2-1@2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.tutor-page .overlap-4 {
+  position: absolute;
+  width: 230px;
+  height: 460px;
+  top: 163px;
+  left: 35px;
+}
+
+.tutor-page .div-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  top: 412px;
+  left: 33px;
+  display: flex;
+  width: 127px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-space-200);
+  padding: var(--size-space-200);
+  position: absolute;
+  background-color: var(--collection-1-color);
+  border-radius: var(--size-radius-200);
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--color-border-neutral-secondary);
+}
+
+.tutor-page .joe-bart-chemistry-wrapper {
+  position: absolute;
+  width: 230px;
+  height: 420px;
+  top: 0;
+  left: 0;
+}
+
+.tutor-page .joe-bart-chemistry {
+  position: absolute;
+  width: 200px;
+  top: -1px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}

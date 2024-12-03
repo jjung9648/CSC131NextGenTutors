@@ -1,0 +1,595 @@
+.payment-calculation {
+  background-color: #afa7a7fc;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.payment-calculation .overlap-wrapper {
+  background-color: #afa7a7fc;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+}
+
+.payment-calculation .overlap {
+  position: relative;
+  height: 1024px;
+}
+
+.payment-calculation .rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 909px;
+  top: 115px;
+  left: 0;
+}
+
+.payment-calculation .group {
+  position: absolute;
+  width: 1440px;
+  height: 115px;
+  top: 0;
+  left: 0;
+}
+
+.payment-calculation .overlap-group {
+  position: relative;
+  height: 115px;
+}
+
+.payment-calculation .dashbored {
+  position: absolute;
+  width: 1440px;
+  height: 115px;
+  top: 0;
+  left: 0;
+  background-color: #b6b2d4;
+  border: 0px none;
+  border-color: var(--system-colors-miscellaneous-kit-section-stroke);
+}
+
+.payment-calculation .logo {
+  position: absolute;
+  width: 65px;
+  height: 67px;
+  top: 22px;
+  left: 101px;
+}
+
+.payment-calculation .overlap-group-wrapper {
+  position: absolute;
+  width: 1180px;
+  height: 75px;
+  top: 20px;
+  left: 191px;
+}
+
+.payment-calculation .div {
+  position: relative;
+  height: 75px;
+}
+
+.payment-calculation .bottom-app-bar-wrapper {
+  position: absolute;
+  width: 1180px;
+  height: 75px;
+  top: 0;
+  left: 0;
+}
+
+.payment-calculation .bottom-app-bar {
+  display: flex;
+  width: 1180px;
+  height: 75px;
+  align-items: center;
+  gap: 276px;
+  padding: 0px 16px 0px 4px;
+  position: relative;
+  background-color: #f2ecf4;
+  border-radius: 20px;
+}
+
+.payment-calculation .leading-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.payment-calculation .icon {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.payment-calculation .container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.payment-calculation .state-layer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.payment-calculation .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.payment-calculation .avater-icon {
+  position: absolute;
+  width: 46px;
+  height: 38px;
+  top: 18px;
+  left: 1096px;
+  background-image: url(https://c.animaapp.com/DyN9RfIJ/img/generic-avatar@2x.png);
+  background-size: 100% 100%;
+}
+
+.payment-calculation .frame {
+  position: absolute;
+  width: 661px;
+  height: 150px;
+  top: 185px;
+  left: 665px;
+  background-color: var(--m3-schemes-surface-container-high);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.payment-calculation .frame-2 {
+  position: relative;
+  width: 387px;
+  height: 90px;
+  top: 27px;
+  left: 19px;
+  overflow: hidden;
+}
+
+.payment-calculation .overlap-group-2 {
+  position: absolute;
+  width: 532px;
+  height: 32px;
+  top: 39px;
+  left: 5px;
+}
+
+.payment-calculation .headline {
+  position: absolute;
+  width: 350px;
+  top: 0;
+  left: 0;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.payment-calculation .text-wrapper {
+  position: absolute;
+  width: 476px;
+  top: 0;
+  left: 56px;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.payment-calculation .headline-2 {
+  width: 476px;
+  top: -3px;
+  left: 5px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.payment-calculation .frame-3 {
+  position: absolute;
+  width: 665px;
+  height: 464px;
+  top: 406px;
+  left: 661px;
+  background-color: var(--m3-schemes-surface-container-high);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.payment-calculation .overlap-2 {
+  position: absolute;
+  width: 665px;
+  height: 371px;
+  top: 0;
+  left: 0;
+}
+
+.payment-calculation .line {
+  width: 1px;
+  height: 32px;
+  top: 339px;
+  left: 278px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.payment-calculation .line-2 {
+  width: 621px;
+  height: 1px;
+  top: 338px;
+  left: 22px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.payment-calculation .line-3 {
+  width: 621px;
+  height: 1px;
+  top: 370px;
+  left: 22px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.payment-calculation .line-4 {
+  width: 1px;
+  height: 250px;
+  top: 89px;
+  left: 278px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.payment-calculation .headline-3 {
+  width: 67px;
+  top: 337px;
+  left: 364px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.payment-calculation .headline-4 {
+  width: 68px;
+  top: 337px;
+  left: 304px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.payment-calculation .headline-5 {
+  width: 68px;
+  top: 337px;
+  left: 28px;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.payment-calculation .frame-4 {
+  position: absolute;
+  width: 665px;
+  height: 338px;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.payment-calculation .text-wrapper-2 {
+  position: absolute;
+  width: 166px;
+  height: 15px;
+  top: 11px;
+  left: 487px;
+  font-family: var(--m3-body-medium-font-family);
+  font-weight: var(--m3-body-medium-font-weight);
+  color: #000000;
+  font-size: var(--m3-body-medium-font-size);
+  letter-spacing: var(--m3-body-medium-letter-spacing);
+  line-height: var(--m3-body-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--m3-body-medium-font-style);
+}
+
+.payment-calculation .frame-5 {
+  position: absolute;
+  width: 637px;
+  height: 208px;
+  top: 32px;
+  left: 26px;
+}
+
+.payment-calculation .headline-6 {
+  width: 637px;
+  top: 19px;
+  left: 0;
+  font-size: var(--m3-headline-small-font-size);
+  letter-spacing: var(--m3-headline-small-letter-spacing);
+  line-height: var(--m3-headline-small-line-height);
+  position: absolute;
+  font-family: var(--m3-headline-small-font-family);
+  font-weight: var(--m3-headline-small-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-headline-small-font-style);
+}
+
+.payment-calculation .line-5 {
+  width: 621px;
+  height: 1px;
+  top: 58px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.payment-calculation .headline-7 {
+  width: 250px;
+  height: 24px;
+  top: 83px;
+  left: 0;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  white-space: nowrap;
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-8 {
+  width: 17px;
+  height: 24px;
+  top: 83px;
+  left: 276px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-9 {
+  width: 94px;
+  height: 24px;
+  top: 83px;
+  left: 319px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-10 {
+  width: 250px;
+  height: 24px;
+  top: 133px;
+  left: 0;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-11 {
+  width: 19px;
+  height: 24px;
+  top: 133px;
+  left: 276px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-12 {
+  width: 92px;
+  height: 24px;
+  top: 133px;
+  left: 321px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-13 {
+  width: 250px;
+  height: 24px;
+  top: 183px;
+  left: 0;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-14 {
+  width: 19px;
+  height: 24px;
+  top: 183px;
+  left: 276px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .headline-15 {
+  width: 92px;
+  height: 24px;
+  top: 183px;
+  left: 321px;
+  font-size: var(--m3-body-large-font-size);
+  letter-spacing: var(--m3-body-large-letter-spacing);
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  font-family: var(--m3-body-large-font-family);
+  font-weight: var(--m3-body-large-font-weight);
+  color: #1d1b20;
+  font-style: var(--m3-body-large-font-style);
+}
+
+.payment-calculation .button {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  width: 127px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-space-200);
+  padding: var(--size-space-200);
+  position: absolute;
+  top: 403px;
+  left: 240px;
+  background-color: var(--collection-1-color);
+  border-radius: var(--size-radius-200);
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--color-border-neutral-secondary);
+}
+
+.payment-calculation .button-2 {
+  all: unset;
+  box-sizing: border-box;
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: var(--single-line-body-base-font-family);
+  font-weight: var(--single-line-body-base-font-weight);
+  color: var(--color-text-default-default);
+  font-size: var(--single-line-body-base-font-size);
+  text-align: center;
+  letter-spacing: var(--single-line-body-base-letter-spacing);
+  line-height: var(--single-line-body-base-line-height);
+  font-style: var(--single-line-body-base-font-style);
+}
+
+.payment-calculation .payment-calculation-wrapper {
+  position: absolute;
+  width: 503px;
+  height: 685px;
+  top: 185px;
+  left: 120px;
+  background-color: var(--m3-schemes-surface-container-high);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.payment-calculation .p {
+  position: absolute;
+  width: 463px;
+  top: 28px;
+  left: 20px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.payment-calculation .span {
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.payment-calculation .text-wrapper-3 {
+  font-size: 36px;
+}
+
+.payment-calculation .text-wrapper-4 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.payment-calculation .leftbar {
+  position: absolute;
+  width: 96px;
+  height: 1024px;
+  top: 0;
+  left: 0;
+}
