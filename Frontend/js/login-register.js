@@ -19,6 +19,27 @@ function showRegisterForm(userType) {
     document.getElementById(userType + '_user_type').value = userType;
 }
 
+function showLoginForm(userType) {
+    var loginst = document.getElementById('loginst');
+    var logaftert = document.getElementById('logaftert');
+
+    if (userType === 'student') {
+        loginst.style.display = 'block';
+        logaftert.style.display = 'none';
+    } else if (userType === 'tutor') {
+        loginst.style.display = 'none';
+        logaftert.style.display = 'block';
+    }
+
+    var emailInput = document.getElementById('email');
+    var passwordInput = document.getElementById('password');
+    emailInput.placeholder = userType.charAt(0).toUpperCase() + userType.slice(1) + ' Email';
+    passwordInput.placeholder = userType.charAt(0).toUpperCase() + userType.slice(1) + ' Password';
+
+    // Set the user type in a hidden input field
+    document.getElementById('user_type').value = userType;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     var registerFormStudent = document.getElementById('register-form-student-form');
     var registerFormTutor = document.getElementById('register-form-tutor-form');
