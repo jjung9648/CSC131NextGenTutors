@@ -48,7 +48,7 @@ To successfully run the project, ensure that the following are installed:
    ```bash
    ./start.sh
    ```
-
+4. **Go http://localhost:8080**
 ---
 
 ## Notes
