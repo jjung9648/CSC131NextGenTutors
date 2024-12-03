@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dateSet = $_POST['dateSet'];
     $action = $_POST['action'];
 
+    print "Session Name: $sessionname";
+    /*
     $scheduling = new SessionScheduling;
 
     if($action == 'create') {
@@ -26,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     else if($action == 'delete') {
         $scheduling->deleteSession($tutor_id, $student_id, $sessionnumber);
     }
-
+    */
 }
 
 
