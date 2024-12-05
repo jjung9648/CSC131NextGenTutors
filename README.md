@@ -1,10 +1,10 @@
 
 # NexGen Tutors Project Main Branch: Please follow the instructions below
-Landing page, logging page, student login(not tutor login/registration and student registration), student dashboard only works.
-You can test student login with following id and passwords
+Landing page, login page, student login(not tutor login/registration and student registration), and the student dashboard with enrolled subjects and the number of messages functions only work.
+You can test student login with the following ID and passwords
 Id/password
 'S001', 12345
-'S002' ,12345
+'S002',12345
 'S003' 12345
 'S004' 12345
 'S005' 12345
