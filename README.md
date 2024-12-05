@@ -1,5 +1,13 @@
 
 # NexGen Tutors
+Landing page, logging page, student login(not tutor login/registration and student registration), student dashboard only works.
+You can test student login with following id and passwords
+Id/password
+'S001', 12345
+'S002' ,12345
+'S003' 12345
+'S004' 12345
+'S005' 12345
 
 NexGen Tutors is a web-based platform designed to enhance the interaction between tutors, students, and parents. Our goal is to make tutoring accessible, efficient, and user-friendly for everyone involved.
 
