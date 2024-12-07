@@ -3,11 +3,11 @@
 Landing page, login page, student login(not tutor login/registration and student registration), and the student dashboard with enrolled subjects and the number of messages functions only work.
 You can test student login with the following ID and passwords
 Id/password
-'S001', 12345
-'S002',12345
-'S003' 12345
-'S004' 12345
-'S005' 12345
+'S001', 123456
+'S002',123456
+'S003' 123456
+'S004' 123456
+'S005' 123456
 
 NexGen Tutors is a web-based platform designed to enhance the interaction between tutors, students, and parents. Our goal is to make tutoring accessible, efficient, and user-friendly for everyone involved.
 
